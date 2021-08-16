@@ -10,10 +10,12 @@ Last edited: 1st Aug 2021 (CES), 11:07pm
 # we will not assume anything else, and the string can be non-english words.
 # we will remove ALL non-english entries, and resort.
 """
+
 import logging
 import os, sys, io
 from   libWord import C_WordList, C_OneWord
 import argparse
+from   libWordCount import C_WordSortedCountDict, C_WordUnSortedCountDict
 import pandas as pd
 # must install pandas, using bash cmd line:
 # sudo apt-get install python3-pandas
@@ -36,9 +38,71 @@ def wordIsRomanChars(w):
     return w[0].upper() and all([ord(c) <128 or (ord(c) >= 65313 and ord(c) <= 65339) or (ord(c) >= 65345 and ord(c) <= 65371) for c in w])
 
 
+
+def methodID_1(args):
+    myMasterCount = C_WordSortedCountDict()
+    topN = args.topNunigram
+    myMasterCount.readUnigramCount(args.unigram_countFile,topN)   # reading topN entries
+    foundTok = myMasterCount.dictSortedIdxToStr[args.fixHotWord_position-1]
+    foundCountThreshold = myMasterCount.dictStrToSortedCount[foundTok]
+    print("==============> Threshold for hotword ",foundCountThreshold)
+    
+  # Lets read the hot word first
+    listWord = C_WordList()
+    listWord.read_WordList( args.hotwordRawList,True)
+    # we must use above class, as we need the label of the hotword in __Tanjong_Pagar_Way
+    # we must pass it a flag to tell read_WordList if or if not hotWord
+    myHotWordCount = C_WordUnSortedCountDict()
+    for oneWordStr in listWord.listWordStr:
+        oneWord = listWord.dictWStrToCWord[oneWordStr]
+        countPron = 0
+        for pronStr in oneWord.wordArrayPron:        
+            if countPron == 0:
+                myHotWordCount.addWordCount(oneWord.wordLabel, foundCountThreshold)
+                countPron = countPron+1
+            else:
+                myHotWordCount.addWordCount(oneWord.wordLabel+'#'+str(countPron), foundCountThreshold)
+                countPron=countPron+1
+
+        #inserting the hotword and label into the myHotWordCount
+
+
+    listOfWordToAdd = ['<s>','</s>','<unk>','<noise>','<v-noise>']
+    for oneWordStr in  listOfWordToAdd:
+        myHotWordCount.addWordCount(oneWordStr , foundCountThreshold)
+
+    print('At p2 ====================================')
+
+
+    if str(args.whichMethod) == '1':
+        #no change in the count
+        print('no change in count')
+
+    print("At p3args whichMethod =", args.whichMethod)
+
+    if str(args.whichMethod) == 'X':
+        #sqrt root the count
+        print('SQRT change in count')
+        myMasterCount.SqrtRootCount()
+        myHotWordCount.SqrtRootCount()
+
+
+
+    # here we save the count files    
+    myMasterCount.SaveFile(args.opHotDecoderUnigram,'w')
+    myHotWordCount.SaveFile(args.opHotDecoderUnigram,'a')
+
+    # here we save the lexicon
+    list_englishWordsUnigram = sorted(set(myMasterCount.dictStrToSortedCount.keys()))
+    listWord.add_WordList( list_englishWordsUnigram, False)  #MUST set second entry to False it is NOT a hotword
+    listWord.write_WordLexicon(args.opHotDecoderLexicon)
+
+
+
+
 #Example to run the code
 """
-python3 run_createhotWordLexiconUnigram.py --unigram_countFile ./TestData_Clean/unigram.count --topNunigram 1000 --hotwordRawList \
+python3 run_createhotWordLexiconUnigram.py --whichMethod=$methodID --unigram_countFile ./TestData_Clean/unigram.count --topNunigram 1000 --hotwordRawList \
   ./TestData_Clean/hotwordRawList.txt  --opHotDecoderLexicon ./TestData_Op/hotwordDecoderLex.txt \
   --opHotDecoderUnigram ./TestData_Op/hotwordDecoderUnigram\
   --fixHotWord_position 300
@@ -47,6 +111,7 @@ python3 run_createhotWordLexiconUnigram.py --unigram_countFile ./TestData_Clean/
 def real_main():        
     log.info("{}".format("reading given unigram count to create English lexicon for hotwords..."))
     parse = argparse.ArgumentParser()
+    parse.add_argument('--whichMethod',    type=str, required=True,  help="which method to generate the unigramn count and lexicon")
     parse.add_argument('--unigram_countFile',    required=True,  help="unigram count of Master Kaldi ASR")
     parse.add_argument('--topNunigram',      type=int, default=5000, help="find topN unigrams (english words) will be retained")
     parse.add_argument('--hotwordRawList',   required=True,  help="hotword raw list file ")
@@ -57,71 +122,9 @@ def real_main():
     
     args = parse.parse_args()
 
-    # Lets read the hot word first
-    listWord = C_WordList()
-    listWord.read_WordList( args.hotwordRawList, True)
-    # we must pass it a flag to tell HIM if of if not hotWord
+    print('At p1 ====================================')
+    methodID_1(args)
 
-    # lets prepare to write the hotword decoder unigram count!!!
-    opfile_HotDecoderUnigram = open( args.opHotDecoderUnigram,'w')
-
-    # sanity check, we will not put hotword behind topNunigram
-    if (args.fixHotWord_position > args.topNunigram):
-        args.fixHotWord_position  = args.topNunigram
-
-    # we will use pandas, and assume that the unigram count has 2 fields
-    # The first row must NOT be ignored, hence header = none
-    # see how to use pandas in: https://re-thought.com/pandas-value_counts/
-    df = pd.read_csv(args.unigram_countFile, header=None, encoding='utf8', dtype={'token':'str', 'count':'int'}, sep='\t')
-    # BUT pandas require 1st row to have the field ID
-    # we can replocate it by the following, BUT we must save the original first!
-    df.columns = ['token','count']
-    sorted_df = df.sort_values('count',ascending=False)
-    print('num of elements read in ',args.unigram_countFile,' = ', len(df))
-
-    # we will save those unique english-only  words!!!
-    numFound=0
-    setWords =set(words.words()) # if we dont use set, its very slow!!!
-    list_englishWordsUnigram = set()
-    for tok,count in zip(sorted_df['token'].values, sorted_df['count'].values):
-        if wordIsRomanChars(str(tok)) == 1 and numFound< args.topNunigram and (tok in setWords):
-            # we ONLY keep english words with count > countThreshold
-            opfile_HotDecoderUnigram.write("{0}\t{1}\n".format(tok,count))
-            list_englishWordsUnigram.add(tok)
-            numFound=numFound+1
-            if (numFound == args.fixHotWord_position):
-                foundCountThreshold = count
-            if (numFound >= args.topNunigram):
-                break
-
-    print('written ',numFound,' entries in sorted_unigram')
-    for oneWordStr in  listWord.listWordStr:
-        oneWord = listWord.dictWStrToCWord[oneWordStr]
-        countPron = 0
-        for pronStr in oneWord.wordArrayPron:        
-            if countPron == 0:
-                opfile_HotDecoderUnigram.write("{0}\t{1}\n".format(oneWord.wordLabel , foundCountThreshold))
-                countPron=countPron+1
-            else:
-                opfile_HotDecoderUnigram.write("{0}#{2} {1}\n".format(oneWord.wordLabel , foundCountThreshold, countPron))
-                countPron=countPron+1
-        numFound=numFound+countPron        
-
-    print('written ',numFound,' entries in hotwordList')
-
-    listOfWordToAdd = ['<s>','</s>','<unk>','<noise>','<v-noise>']
-    for oneWordStr in  listOfWordToAdd:
-        numFound=numFound+1
-        opfile_HotDecoderUnigram.write("{0}\t{1}\n".format(oneWordStr , foundCountThreshold))
-
-    opfile_HotDecoderUnigram.close()
-    
-    # saving the hotword decoder lexicon
-    # it is the hotwordlist entries AND the found topN unigram entires
-
-    listWord.add_WordList( sorted(list_englishWordsUnigram), False)  #MUST set second entry to False it is NOT a hotword
-    listWord.write_WordLexicon(args.opHotDecoderLexicon)
-    
 
 
 def main():

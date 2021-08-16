@@ -26,9 +26,9 @@ outWERHotWordResult=$ExpID/Output/WER_result
 opWER=$ExpID/Output/WER_result.txt
 
 
-python3 ./local/run_scoreWER.py --ref $inRefWord --hyp $inDual --opFileName $outWERDualResult --remarkStr "DualDecoder Result" > $opWER
-python3 ./local/run_scoreWER.py --ref $inRefWord --hyp $inMaster --opFileName $outWERMasterResult --remarkStr "MasterDecoder Result" >> $opWER
-python3 ./local/run_scoreWER.py --ref $inRefWord --hyp $inHotWord --opFileName $outWERHotWordResult --remarkStr "HotWordDecoder Result" >> $opWER
+python3.7 ./local/run_scoreWER.py --ref $inRefWord --hyp $inDual --opFileName $outWERDualResult --remarkStr "DualDecoder Result" > $opWER
+python3.7 ./local/run_scoreWER.py --ref $inRefWord --hyp $inMaster --opFileName $outWERMasterResult --remarkStr "MasterDecoder Result" >> $opWER
+python3.7 ./local/run_scoreWER.py --ref $inRefWord --hyp $inHotWord --opFileName $outWERHotWordResult --remarkStr "HotWordDecoder Result" >> $opWER
 
 
 

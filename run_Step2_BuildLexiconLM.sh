@@ -10,18 +10,16 @@
 # Step 1.1: # Step 1.1, creating the hotword decoder's lexicon AND language model count
 # Input IS ONLY the required hotwordRawList.txt
 
-ExpID=./exp/ExpX
 
-in_hotwordRawlist=$ExpID/Input/hotwordRawList.txt 
-in_MasterUnigramCount=$ExpID/Input/unigram.count
-op_hotWordLex=$ExpID/dataLG/hotwordDecoderLex.txt
-op_hotWordUnigram=$ExpID/dataLG/hotwordDecoderUnigram.txt
-op_hotWordUnigramArpa=$ExpID/dataLG/hotwordDecoderUnigram.arpa
-threshold_N_forMasterWord=5000
-threshold_N_forCountHotWord=300
+in_hotwordRawlist=$ExpDir/Input/hotwordRawList.txt 
+in_MasterUnigramCount=$ExpDir/Input/unigram.count
+op_hotWordLex=$ExpDir/dataLG/hotwordDecoderLex.txt
+op_hotWordUnigram=$ExpDir/dataLG/hotwordDecoderUnigram.txt
+op_hotWordUnigramArpa=$ExpDir/dataLG/hotwordDecoderUnigram.arpa
 
 
-python3 ./local/run_createhotWordLexiconUnigram.py  --hotwordRawList  $in_hotwordRawlist  \
+python3 ./local/run_createhotWordLexiconUnigram.py  --whichMethod=$methodID\
+                                            --hotwordRawList  $in_hotwordRawlist  \
                                             --unigram_countFile $in_MasterUnigramCount \
                                             --topNunigram  $threshold_N_forMasterWord\
                                             --fixHotWord_position $threshold_N_forCountHotWord\

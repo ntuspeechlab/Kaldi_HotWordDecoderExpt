@@ -29,9 +29,9 @@ source run_Step2_BuildLexiconLM.sh
 # I am waiting for Yachao to integrate this
 # run_Step3_buildAndRunHotWordDecoder.sh
 # Lets hack this first:
-#cp ./exp/TMP_OP_STEP3/yachao_mismatch/* ./exp/ExpX/Output/
+cp ./exp/TMP_OP_STEP3/yachao_mismatch/* ./exp/ExpX/Output/
 #cp ./exp/TMP_OP_STEP3/yachao_best/* ./exp/ExpX/Output/
-cp ./exp/TMP_OP_STEP3/yachao_old/* ./exp/ExpX/Output/
+#cp ./exp/TMP_OP_STEP3/yachao_old/* ./exp/ExpX/Output/
 
 
 
