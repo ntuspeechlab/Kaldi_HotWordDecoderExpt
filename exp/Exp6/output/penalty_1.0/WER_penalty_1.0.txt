@@ -1,0 +1,66 @@
+WER:./exp/Exp6/output/penalty_1.0/7.txt
+Type:_HotONLY.txt
+%WER 38.88 [ 829 / 2132, 114 ins, 475 del, 240 sub ]
+%SER 52.64 [ 619 / 1176 ]
+Scored 1176 sentences, 0 not present in hyp.
+
+WER:./exp/Exp6/output/penalty_1.0/8.txt
+Type:_HotONLY.txt
+%WER 34.76 [ 741 / 2132, 133 ins, 381 del, 227 sub ]
+%SER 48.64 [ 572 / 1176 ]
+Scored 1176 sentences, 0 not present in hyp.
+
+WER:./exp/Exp6/output/penalty_1.0/9.txt
+Type:_HotONLY.txt
+%WER 31.82 [ 678 / 2131, 163 ins, 303 del, 212 sub ] [PARTIAL]
+%SER 45.87 [ 539 / 1175 ]
+Scored 1175 sentences, 1 not present in hyp.
+
+WER:./exp/Exp6/output/penalty_1.0/10.txt
+Type:_HotONLY.txt
+%WER 30.61 [ 652 / 2130, 191 ins, 261 del, 200 sub ] [PARTIAL]
+%SER 43.70 [ 513 / 1174 ]
+Scored 1174 sentences, 2 not present in hyp.
+
+WER:./exp/Exp6/output/penalty_1.0/11.txt
+Type:_HotONLY.txt
+%WER 28.73 [ 612 / 2130, 216 ins, 213 del, 183 sub ] [PARTIAL]
+%SER 41.43 [ 486 / 1173 ]
+Scored 1173 sentences, 3 not present in hyp.
+
+WER:./exp/Exp6/output/penalty_1.0/12.txt
+Type:_HotONLY.txt
+%WER 28.32 [ 603 / 2129, 237 ins, 186 del, 180 sub ] [PARTIAL]
+%SER 40.78 [ 478 / 1172 ]
+Scored 1172 sentences, 4 not present in hyp.
+
+WER:./exp/Exp6/output/penalty_1.0/13.txt
+Type:_HotONLY.txt
+%WER 28.79 [ 613 / 2129, 253 ins, 187 del, 173 sub ] [PARTIAL]
+%SER 42.02 [ 492 / 1171 ]
+Scored 1171 sentences, 5 not present in hyp.
+
+WER:./exp/Exp6/output/penalty_1.0/14.txt
+Type:_HotONLY.txt
+%WER 28.81 [ 613 / 2128, 258 ins, 183 del, 172 sub ] [PARTIAL]
+%SER 42.60 [ 498 / 1169 ]
+Scored 1169 sentences, 7 not present in hyp.
+
+WER:./exp/Exp6/output/penalty_1.0/15.txt
+Type:_HotONLY.txt
+%WER 29.23 [ 622 / 2128, 272 ins, 180 del, 170 sub ] [PARTIAL]
+%SER 43.28 [ 506 / 1169 ]
+Scored 1169 sentences, 7 not present in hyp.
+
+WER:./exp/Exp6/output/penalty_1.0/16.txt
+Type:_HotONLY.txt
+%WER 30.04 [ 639 / 2127, 287 ins, 180 del, 172 sub ] [PARTIAL]
+%SER 44.26 [ 517 / 1168 ]
+Scored 1168 sentences, 8 not present in hyp.
+
+WER:./exp/Exp6/output/penalty_1.0/17.txt
+Type:_HotONLY.txt
+%WER 30.57 [ 650 / 2126, 294 ins, 186 del, 170 sub ] [PARTIAL]
+%SER 45.16 [ 527 / 1167 ]
+Scored 1167 sentences, 9 not present in hyp.
+

@@ -1,0 +1,63 @@
+Release 6rd Aug 2021
+
+
+WER DualDecoder Result_WordONLY.txt
+%WER 19.82 [ 2183 / 11014, 198 ins, 502 del, 1483 sub ]
+%SER 69.47 [ 817 / 1176 ]
+Scored 1176 sentences, 0 not present in hyp.
+
+
+WER DualDecoder Result_WordAndHotWordLabel.txt
+%WER 25.74 [ 2054 / 7981, 204 ins, 627 del, 1223 sub ]
+%SER 69.22 [ 814 / 1176 ]
+Scored 1176 sentences, 0 not present in hyp.
+
+
+WER DualDecoder Result_HOTWordONLY.txt
+%WER 15.76 [ 336 / 2132, 198 ins, 79 del, 59 sub ]
+%SER 25.34 [ 298 / 1176 ]
+Scored 1176 sentences, 0 not present in hyp.
+
+===============  completed ===================
+Release 6rd Aug 2021
+
+
+WER MasterDecoder Result_WordONLY.txt
+%WER 45.96 [ 5062 / 11014, 268 ins, 1023 del, 3771 sub ]
+%SER 90.31 [ 1062 / 1176 ]
+Scored 1176 sentences, 0 not present in hyp.
+
+
+WER MasterDecoder Result_WordAndHotWordLabel.txt
+%WER 54.57 [ 4355 / 7981, 1592 ins, 284 del, 2479 sub ]
+%SER 90.31 [ 1062 / 1176 ]
+Scored 1176 sentences, 0 not present in hyp.
+
+
+WER MasterDecoder Result_HOTWordONLY.txt
+%WER 66.93 [ 1427 / 2132, 1 ins, 1384 del, 42 sub ]
+%SER 74.06 [ 871 / 1176 ]
+Scored 1176 sentences, 0 not present in hyp.
+
+===============  completed ===================
+Release 6rd Aug 2021
+
+
+WER HotWordDecoder Result_WordONLY.txt
+%WER 38.38 [ 4227 / 11014, 72 ins, 2432 del, 1723 sub ]
+%SER 93.11 [ 1095 / 1176 ]
+Scored 1176 sentences, 0 not present in hyp.
+
+
+WER HotWordDecoder Result_WordAndHotWordLabel.txt
+%WER 50.98 [ 4069 / 7981, 62 ins, 2529 del, 1478 sub ]
+%SER 93.03 [ 1094 / 1176 ]
+Scored 1176 sentences, 0 not present in hyp.
+
+
+WER HotWordDecoder Result_HOTWordONLY.txt
+%WER 16.09 [ 343 / 2132, 196 ins, 86 del, 61 sub ]
+%SER 25.85 [ 304 / 1176 ]
+Scored 1176 sentences, 0 not present in hyp.
+
+===============  completed ===================

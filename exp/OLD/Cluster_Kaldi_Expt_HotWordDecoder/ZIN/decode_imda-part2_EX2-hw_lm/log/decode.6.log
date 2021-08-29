@@ -1,0 +1,266 @@
+# nnet3-latgen-faster --online-ivectors=scp:./ivector/imda-part2/ivector_online.scp --online-ivector-period=10 --frame-subsampling-factor=3 --frames-per-chunk=50 --extra-left-context=0 --extra-right-context=0 --extra-left-context-initial=-1 --extra-right-context-final=-1 --minimize=false --max-active=7000 --min-active=200 --beam=15.0 --lattice-beam=8.0 --acoustic-scale=1.0 --allow-partial=true --word-symbol-table=/home3/ztkyaw/w2021/deliverables/contrast-zin-dev/output/expEX2/graph/words.txt /home3/ztkyaw/w2021/deliverables/contrast-zin-dev/baseline/tdnnf-transfer-sp/final.mdl /home3/ztkyaw/w2021/deliverables/contrast-zin-dev/output/expEX2/graph/HCLG.fst "ark,s,cs:apply-cmvn --norm-means=false --norm-vars=false --utt2spk=ark:./data/imda-part2/mfcc-hires/split10/6/utt2spk scp:./data/imda-part2/mfcc-hires/split10/6/cmvn.scp scp:./data/imda-part2/mfcc-hires/split10/6/feats.scp ark:- |" "ark:|lattice-scale --acoustic-scale=10.0 ark:- ark:- | gzip -c >/home3/ztkyaw/w2021/deliverables/contrast-zin-dev/baseline/tdnnf-transfer-sp/decode_imda-part2_1629889191-hw_lmg/lat.6.gz" 
+# Invoked at Wed Aug 25 18:59:52 +08 2021 from node02
+#
+# Started at Wed Aug 25 19:00:39 SGT 2021 on node03
+nnet3-latgen-faster --online-ivectors=scp:./ivector/imda-part2/ivector_online.scp --online-ivector-period=10 --frame-subsampling-factor=3 --frames-per-chunk=50 --extra-left-context=0 --extra-right-context=0 --extra-left-context-initial=-1 --extra-right-context-final=-1 --minimize=false --max-active=7000 --min-active=200 --beam=15.0 --lattice-beam=8.0 --acoustic-scale=1.0 --allow-partial=true --word-symbol-table=/home3/ztkyaw/w2021/deliverables/contrast-zin-dev/output/expEX2/graph/words.txt /home3/ztkyaw/w2021/deliverables/contrast-zin-dev/baseline/tdnnf-transfer-sp/final.mdl /home3/ztkyaw/w2021/deliverables/contrast-zin-dev/output/expEX2/graph/HCLG.fst 'ark,s,cs:apply-cmvn --norm-means=false --norm-vars=false --utt2spk=ark:./data/imda-part2/mfcc-hires/split10/6/utt2spk scp:./data/imda-part2/mfcc-hires/split10/6/cmvn.scp scp:./data/imda-part2/mfcc-hires/split10/6/feats.scp ark:- |' 'ark:|lattice-scale --acoustic-scale=10.0 ark:- ark:- | gzip -c >/home3/ztkyaw/w2021/deliverables/contrast-zin-dev/baseline/tdnnf-transfer-sp/decode_imda-part2_1629889191-hw_lmg/lat.6.gz' 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:RemoveOrphanNodes():nnet-nnet.cc:948) Removed 1 orphan nodes.
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:RemoveOrphanComponents():nnet-nnet.cc:847) Removing 2 orphan components.
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:Collapse():nnet-utils.cc:1488) Added 1 components, removed 2
+apply-cmvn --norm-means=false --norm-vars=false --utt2spk=ark:./data/imda-part2/mfcc-hires/split10/6/utt2spk scp:./data/imda-part2/mfcc-hires/split10/6/cmvn.scp scp:./data/imda-part2/mfcc-hires/split10/6/feats.scp ark:- 
+lattice-scale --acoustic-scale=10.0 ark:- ark:- 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:CheckAndFixConfigs():nnet-am-decodable-simple.cc:294) Increasing --frames-per-chunk from 50 to 51 to make it a multiple of --frame-subsampling-factor=3
+nsc-part2-chn0-spk09383051inf-030510049 so here last avenue __Jalan_Limau_Nipis and company industrial estate 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09383051inf-030510049 is 1.54713 over 229 frames.
+nsc-part2-chn0-spk09383051inf-030510060 please tell me how to get to __Seletar_Hills_Drive 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09383051inf-030510060 is 1.56371 over 140 frames.
+nsc-part2-chn0-spk09383051inf-030510099 __Sims_Way __Geylang_Bahru teras and __Marine_Parade_Road 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09383051inf-030510099 is 1.86784 over 142 frames.
+nsc-part2-chn0-spk09383051inf-030510134 __Bedok_Point __Australian_International school and __Methodist_Girls' school 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09383051inf-030510134 is 1.80027 over 161 frames.
+nsc-part2-chn0-spk09383051inf-030510181 how file away is __Ulu_Sembawang from here 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09383051inf-030510181 is 1.54757 over 130 frames.
+nsc-part2-chn0-spk09383051inf-030510196 may am i and meeting exist at __Marsiling_Crescent first 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09383051inf-030510196 is 1.59291 over 182 frames.
+nsc-part2-chn0-spk09383051inf-030510302 then __Secondary_School spring hood spring would highest and smile __Lee_Kong_Chian __Lee_Kong_Yan school of business 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09383051inf-030510302 is 1.50074 over 343 frames.
+nsc-part2-chn0-spk09383051inf-030510394 toastmaster __Stamford_Raffles __Ho_Ling __Ho_Lee_Ling and __Hussein_Aljunied 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09383051inf-030510394 is 1.54748 over 238 frames.
+nsc-part2-chn0-spk09383051inf-030510410 am waiting for pilot to comeback from __Bukit_Batok 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09383051inf-030510410 is 1.71125 over 124 frames.
+nsc-part2-chn0-spk09383051inf-030510434 __Lengkong_Dua __Canning_Lane and compound __Jalan_Bangsawan neighborhood police post 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09383051inf-030510434 is 1.64511 over 234 frames.
+nsc-part2-chn0-spk09383051inf-030511584 __Yung_Kuang_Road __Grove_Crescent and b bedroom jetty 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09383051inf-030511584 is 1.60441 over 168 frames.
+nsc-part2-chn0-spk09383051inf-030511680 please look fire claim me when reach __Chinatown_Hotel 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09383051inf-030511680 is 1.57064 over 153 frames.
+nsc-part2-chn0-spk09383051inf-030511706 __Kampong_Kapor_Road birth __Boon_Lay street and __Bartley_Road 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09383051inf-030511706 is 1.48567 over 176 frames.
+nsc-part2-chn0-spk09383051inf-030511716 __Perahu_Road __Kampong_Kayu_Road and __Jalan_Mesra 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09383051inf-030511716 is 1.70986 over 145 frames.
+nsc-part2-chn0-spk09383051inf-030511804 __Bukit_Timah avenue __Whitley_Road and __Angsana_Drive 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09383051inf-030511804 is 1.56835 over 162 frames.
+nsc-part2-chn0-spk09423020mam-030200045 which birth should i take __Taman_Bedok public slightly 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09423020mam-030200045 is 1.67917 over 117 frames.
+nsc-part2-chn0-spk09423020mam-030200080 one three hill __Orchard_Spring_Lane and close drive 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09423020mam-030200080 is 1.59565 over 182 frames.
+nsc-part2-chn0-spk09423020mam-030200162 __Lambeth_Walk __Taman_Jurong __Shopping_Centre and only status 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09423020mam-030200162 is 1.57058 over 204 frames.
+nsc-part2-chn0-spk09423020mam-030200173 __Saint_Nicholas_View __Jamaica_Road and __Kampong_Bukit_Coffee china secretary 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09423020mam-030200173 is 1.53438 over 241 frames.
+nsc-part2-chn0-spk09423020mam-030200201 show way to later error space 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09423020mam-030200201 is 1.42258 over 140 frames.
+nsc-part2-chn0-spk09423020mam-030200221 select faster sway to __Sembawang_Alley 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09423020mam-030200221 is 1.48572 over 123 frames.
+nsc-part2-chn0-spk09423020mam-030200269 __Bukit_Batok neither park __Jalan_Tari_Lilin and tendon medical sense ah 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09423020mam-030200269 is 1.63889 over 224 frames.
+nsc-part2-chn0-spk09423020mam-030200350 __Sir_Frank_Swettenham __Hussein_Aljunied and __Lucy_Tan 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09423020mam-030200350 is 1.50046 over 165 frames.
+nsc-part2-chn0-spk09423020mam-030200415 __How_Sun_Walk __Shelford_Road and __Geylang_Road polyclinic and dental clinic 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09423020mam-030200415 is 1.63004 over 232 frames.
+nsc-part2-chn0-spk09423020mam-030200427 __Maple_Avenue __Kampung_Glam constituency sports club and paying primary school 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09423020mam-030200427 is 1.61309 over 222 frames.
+nsc-part2-chn0-spk09423020mam-030201472 __Wittering_Road __Mimosa_Vale and __Upper_Bukit_Timah_Road 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09423020mam-030201472 is 1.73561 over 167 frames.
+nsc-part2-chn0-spk09423020mam-030201493 which birth should i take to __Chinatown_Hotel 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09423020mam-030201493 is 1.61915 over 127 frames.
+nsc-part2-chn0-spk09423020mam-030201747 __Liane_Road __Empress_Road and __Marsiling_Crescent 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09423020mam-030201747 is 1.63829 over 155 frames.
+nsc-part2-chn0-spk09423020mam-030201887 __Seletar_Link enable __Gibraltar_Crescent 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09423020mam-030201887 is 1.56217 over 183 frames.
+nsc-part2-chn0-spk09523043mam-030430013 please tell me how to get to __Bukit_Timah post office 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09523043mam-030430013 is 1.65317 over 138 frames.
+nsc-part2-chn0-spk09523043mam-030430117 what is the distance to __Simpang_Bedok 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09523043mam-030430117 is 1.72339 over 98 frames.
+nsc-part2-chn0-spk09523043mam-030430175 there food court or restaurant new __Kampong_Bugis 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09523043mam-030430175 is 1.46633 over 147 frames.
+nsc-part2-chn0-spk09523043mam-030430176 __Upper_Aljunied_Link __Jalan_Pelangi and told ward 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09523043mam-030430176 is 1.77083 over 150 frames.
+nsc-part2-chn0-spk09523043mam-030430188 how do i get to __Upper_Seletar_Reservoir 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09523043mam-030430188 is 1.6639 over 108 frames.
+nsc-part2-chn0-spk09523043mam-030430193 parent less registered crispy spring chicken 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09523043mam-030430193 is 1.44903 over 110 frames.
+nsc-part2-chn0-spk09523043mam-030430198 __Lim_Chong_Pang __Hang_Chang_Chieh and __Alexander_Laurie_Johnston 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09523043mam-030430198 is 1.55937 over 201 frames.
+nsc-part2-chn0-spk09523043mam-030430296 __Geylang_Bahru_Lane 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09523043mam-030430296 is 1.98538 over 67 frames.
+nsc-part2-chn0-spk09523043mam-030430385 one other landmark near __Bukit_Batok nature park 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09523043mam-030430385 is 1.83745 over 115 frames.
+nsc-part2-chn0-spk09523043mam-030431462 any spring and yes 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09523043mam-030431462 is 1.44619 over 147 frames.
+nsc-part2-chn0-spk09523043mam-030431528 someone animal quarantine station park twenty two hotel at __Lorong_Pendek 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09523043mam-030431528 is 1.75677 over 237 frames.
+nsc-part2-chn0-spk09523043mam-030431699 __Dunlop_Street __Jalan_Langgar_Bedok and __Singapore_Bible 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09523043mam-030431699 is 1.80807 over 144 frames.
+nsc-part2-chn0-spk09523043mam-030431717 __Seletar_Hills_Drive __Jalan_Tepong and __Chancery_Lane 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09523043mam-030431717 is 1.83177 over 136 frames.
+nsc-part2-chn0-spk09523043mam-030431721 is about forty one spoilt to __Sembawang_Alley 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09523043mam-030431721 is 1.32416 over 113 frames.
+nsc-part2-chn0-spk09523043mam-030431747 __Chinatown_Hotel __Auckland_Road_West and __Buyong_Road 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09523043mam-030431747 is 1.76898 over 132 frames.
+nsc-part2-chn0-spk09543081cnm-030810032 __Bukit_Batok avenue __Mornington_Crescent and __Chong_Pang neighborhood police post 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09543081cnm-030810032 is 1.63921 over 308 frames.
+nsc-part2-chn0-spk09543081cnm-030810066 spring home three said one and blank 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09543081cnm-030810066 is 1.28337 over 121 frames.
+nsc-part2-chn0-spk09543081cnm-030810111 __Sembawang_Vista b branch office sometime call temple simply 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09543081cnm-030810111 is 1.24687 over 240 frames.
+nsc-part2-chn0-spk09543081cnm-030810136 __Bedok_Point __Tanjong_Penjuru tory and __Upper_Bukit_Timah_Road 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09543081cnm-030810136 is 1.39288 over 174 frames.
+nsc-part2-chn0-spk09543081cnm-030810148 can ninety advise to __Kampong_Bugis_Crescent 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09543081cnm-030810148 is 1.48023 over 133 frames.
+nsc-part2-chn0-spk09543081cnm-030810149 i meeting mother toned first 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09543081cnm-030810149 is 1.3017 over 120 frames.
+nsc-part2-chn0-spk09543081cnm-030810219 tell me the way to __Seletar_East from way 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09543081cnm-030810219 is 1.29002 over 157 frames.
+nsc-part2-chn0-spk09543081cnm-030810247 t attendant may money way enroll wrong one __Geylang_Road 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09543081cnm-030810247 is 1.27543 over 159 frames.
+nsc-part2-chn0-spk09543081cnm-030810299 purchase role one __Arrival_Crescent and __Jalan_Lengkok_Sembawang 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09543081cnm-030810299 is 1.47832 over 195 frames.
+nsc-part2-chn0-spk09543081cnm-030810414 __Kampung_Glam 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09543081cnm-030810414 is 1.38407 over 66 frames.
+nsc-part2-chn0-spk09543081cnm-030810433 second __Chin_Bee_Road brochure and __Kampong_Bahru 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09543081cnm-030810433 is 1.41506 over 132 frames.
+nsc-part2-chn0-spk09543081cnm-030811761 __Lloyd_Road __Stratton_Road __Seletar_Satellite_Station_Road 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09543081cnm-030811761 is 1.31306 over 173 frames.
+nsc-part2-chn0-spk09543081cnm-030811771 journal enam type already lame and __Kampong_Kapor_Road 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09543081cnm-030811771 is 1.32791 over 155 frames.
+nsc-part2-chn0-spk09543081cnm-030811785 spring i those 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09543081cnm-030811785 is 1.27946 over 104 frames.
+nsc-part2-chn0-spk09543081cnm-030811849 please tell me house to get to confirmed celery 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09543081cnm-030811849 is 1.3722 over 117 frames.
+nsc-part2-chn0-spk09593083maf-030830071 select fast two subway to must link industrial estate 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09593083maf-030830071 is 1.41362 over 147 frames.
+nsc-part2-chn0-spk09593083maf-030830100 how for away is confirmed will neighbor her to list post from here 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09593083maf-030830100 is 1.34898 over 190 frames.
+nsc-part2-chn0-spk09593083maf-030830115 what is easiest way to __Upper_Aljunied_Road 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09593083maf-030830115 is 1.52511 over 147 frames.
+nsc-part2-chn0-spk09593083maf-030830148 can i take bypass to __Orchard_Spring ready can i ticket pass to __Orchard_Spring_Lane 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09593083maf-030830148 is 1.55533 over 238 frames.
+nsc-part2-chn0-spk09593083maf-030830163 this is the best received trespass bring chicken and i can find that i can fine 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09593083maf-030830163 is 1.47215 over 265 frames.
+nsc-part2-chn0-spk09593083maf-030830173 __Mandarin_Gardens library at china town and institute of ingenious __Singapore_Bible 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09593083maf-030830173 is 1.61639 over 250 frames.
+nsc-part2-chn0-spk09593083maf-030830186 how long deposit take to get to __Sembawang_Country_Club by taxi 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09593083maf-030830186 is 1.45636 over 200 frames.
+nsc-part2-chn0-spk09593083maf-030830212 lily avenue martial in and __Taman_Bedok 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09593083maf-030830212 is 1.55122 over 139 frames.
+nsc-part2-chn0-spk09593083maf-030830219 quickly tell middle way to __Lower_Seletar_Close 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09593083maf-030830219 is 1.55376 over 141 frames.
+nsc-part2-chn0-spk09593083maf-030830231 i am waiting for ras to comeback from __Lorong_Mesu one galah 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09593083maf-030830231 is 1.52305 over 207 frames.
+nsc-part2-chn0-spk09593083maf-030830405 am waiting for cloudy to comeback from __Upper_Bukit_Timah 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09593083maf-030830405 is 1.6744 over 167 frames.
+nsc-part2-chn0-spk09593083maf-030830410 i am waiting for charm c to comeback from locate buttock is 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09593083maf-030830410 is 1.47635 over 210 frames.
+nsc-part2-chn0-spk09593083maf-030831547 __Upper_Bedok_Road recess hall and __Jalan_Sukachita 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09593083maf-030831547 is 1.56961 over 218 frames.
+nsc-part2-chn0-spk09593083maf-030831592 can reach dry __Chong_Pang unpack industrial essay and __River_Valley highest 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09593083maf-030831592 is 1.47729 over 361 frames.
+nsc-part2-chn0-spk09593083maf-030831640 lim __Chong_Pang __Zainudin_Nordin and is third son 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09593083maf-030831640 is 1.51765 over 197 frames.
+nsc-part2-chn0-spk09593083maf-030831695 __Lorong_Kembang __Old_Cathay building and __Jalan_Lembah_Bedok 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09593083maf-030831695 is 1.60914 over 258 frames.
+nsc-part2-chn0-spk09593083maf-030831717 __Bedok_View __Secondary_School __Halifax_Road and republic polytechnic 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09593083maf-030831717 is 1.66189 over 254 frames.
+nsc-part2-chn0-spk09663088mam-030880091 famous must castle and spring home 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09663088mam-030880091 is 1.54377 over 191 frames.
+nsc-part2-chn0-spk09663088mam-030880111 gong young primary school __Kampong_Glam and b low c temple 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09663088mam-030880111 is 1.61475 over 262 frames.
+nsc-part2-chn0-spk09663088mam-030880134 __Upper_Bedok_Road __Russels_Road equity plus ah 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09663088mam-030880134 is 1.63977 over 225 frames.
+nsc-part2-chn0-spk09663088mam-030880186 how long digit take to __Sembawang_Shopping_Centre my taxi 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09663088mam-030880186 is 1.68317 over 193 frames.
+nsc-part2-chn0-spk09663088mam-030880196 meeting worth at __Bukit_Batok central first 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09663088mam-030880196 is 1.61495 over 207 frames.
+nsc-part2-chn0-spk09663088mam-030880199 what under landmark near __Seletar_Satellite status __Inggu_Road 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09663088mam-030880199 is 1.55891 over 172 frames.
+nsc-part2-chn0-spk09663088mam-030880231 am waiting for in to comeback from __Lorong_Mesu nine __Geylang_Road 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09663088mam-030880231 is 1.66883 over 199 frames.
+nsc-part2-chn0-spk09663088mam-030880299 __Bedok_Ria_Crescent __Northshore_Drive member miss body temple 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09663088mam-030880299 is 1.5709 over 214 frames.
+nsc-part2-chn0-spk09663088mam-030880362 soon ping yam l see and __Aljunied_Hussein 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09663088mam-030880362 is 1.46737 over 219 frames.
+nsc-part2-chn0-spk09663088mam-030880410 waiting for please c to comeback from __Marsiling_Neighbourhood police first 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09663088mam-030880410 is 1.54092 over 195 frames.
+nsc-part2-chn0-spk09663088mam-030880424 __Constance_Singam lim __Chong_Pang and even um 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09663088mam-030880424 is 1.5158 over 220 frames.
+nsc-part2-chn0-spk09663088mam-030880433 __Toa_Payoh_Rise then assist school and spring __Singapore_Bible 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09663088mam-030880433 is 1.59322 over 199 frames.
+nsc-part2-chn0-spk09663088mam-030881477 idea is dropping may of at __Jalan_Lana number __Bedok_View 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09663088mam-030881477 is 1.49629 over 159 frames.
+nsc-part2-chn0-spk09663088mam-030881528 __Bukit_Timah neighborhood police central government __Rochor_Road and __Jalan_Dua __Tanah_Merah __Jalan_Dua narrator 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09663088mam-030881528 is 1.5999 over 309 frames.
+nsc-part2-chn0-spk09663088mam-030881621 __Chong_Pang_Combined temple once yourself and preferred avenue 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09663088mam-030881621 is 1.54237 over 189 frames.
+nsc-part2-chn0-spk09663088mam-030881761 confirmed __Meng_Suan_Road __Belilios_Lane deliver just central cage 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09663088mam-030881761 is 1.52754 over 219 frames.
+nsc-part2-chn0-spk09663088mam-030881853 am waiting for zero to comeback from __Institute_Of_Engineer_Singapore 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09663088mam-030881853 is 1.45557 over 150 frames.
+nsc-part2-chn0-spk09733055inf-030550024 __Upper_Aljunied_Link __Jalan_Kayu_Manis and the shorts at __Marina_One pay sense 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09733055inf-030550024 is 1.52001 over 211 frames.
+nsc-part2-chn0-spk09733055inf-030550046 spring home lobby to seen and food republic 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09733055inf-030550046 is 1.66714 over 112 frames.
+nsc-part2-chn0-spk09733055inf-030550057 can recommend me your restaurant near __Kampong_Kembangan neighborhood police birth 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09733055inf-030550057 is 1.58026 over 181 frames.
+nsc-part2-chn0-spk09733055inf-030550118 centennial touching become temple and __Seletar_Hill 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09733055inf-030550118 is 1.41133 over 141 frames.
+nsc-part2-chn0-spk09733055inf-030550134 __Telok_Blangah_Rise __Chatsworth_Road and delivery at china town 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09733055inf-030550134 is 1.60727 over 148 frames.
+nsc-part2-chn0-spk09733055inf-030550164 what is distance __Upper_Bedok jetty 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09733055inf-030550164 is 1.40553 over 113 frames.
+nsc-part2-chn0-spk09733055inf-030550212 __Sembawang_Vista __Alexandra_Lane and cried road 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09733055inf-030550212 is 1.38906 over 124 frames.
+nsc-part2-chn0-spk09733055inf-030550294 __Jalan_Selimang __Jalan_Kampong_Chantek and __Sing_Hoe center for __Chinese_Garden_Road quick h 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09733055inf-030550294 is 1.41502 over 263 frames.
+nsc-part2-chn0-spk09733055inf-030550323 __Holland_Grove_Lane __Geylang_Bahru_Terrace and __Harlyn_Road 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09733055inf-030550323 is 1.69725 over 159 frames.
+nsc-part2-chn0-spk09733055inf-030551452 curry chicken drumstick rose third crispy spring chicken and banana fetus 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09733055inf-030551452 is 1.6107 over 223 frames.
+nsc-part2-chn0-spk09733055inf-030551493 which must should i take to __Marsiling_Drive 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09733055inf-030551493 is 1.65025 over 121 frames.
+nsc-part2-chn0-spk09733055inf-030551566 __Jalan_Sabit enrolled and __Bedok_Ria_Crescent 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09733055inf-030551566 is 1.60291 over 135 frames.
+nsc-part2-chn0-spk09733055inf-030551695 compo role __Jalan_Lana clinic and __Muswell_Hill 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09733055inf-030551695 is 1.52277 over 148 frames.
+nsc-part2-chn0-spk09733055inf-030551875 pay any __Jalan_Mamam and __Seletar_East form me 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09733055inf-030551875 is 1.50392 over 137 frames.
+nsc-part2-chn0-spk09793078inf-030780004 rose this crispy being chicken purchase salad and status arrive leave with blood paper 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09793078inf-030780004 is 1.40573 over 249 frames.
+nsc-part2-chn0-spk09793078inf-030780024 monthly industrial estate __Ang_Mo_Kio_Street twenty four and __Upper_Palm_Valley_Road 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09793078inf-030780024 is 1.61304 over 259 frames.
+nsc-part2-chn0-spk09793078inf-030780123 the __Seletar_Hill __Sunset_Square and library at china town 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09793078inf-030780123 is 1.45571 over 224 frames.
+nsc-part2-chn0-spk09793078inf-030780182 please show reason way to __Kampong_Eunos 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09793078inf-030780182 is 1.50497 over 113 frames.
+nsc-part2-chn0-spk09793078inf-030780197 was this achieve birth way to __Jalan_Langgar_Bedok 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09793078inf-030780197 is 1.52089 over 143 frames.
+nsc-part2-chn0-spk09793078inf-030780203 eighty faster to take bypass to __Jalan_Ulu_Sembawang 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09793078inf-030780203 is 1.50605 over 151 frames.
+nsc-part2-chn0-spk09793078inf-030780232 please look first cumin whenever reach __Taman_Jurong par 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09793078inf-030780232 is 1.60827 over 146 frames.
+nsc-part2-chn0-spk09793078inf-030780247 __Lengkok_Angsa two suggest three in __Bukit_Batok_Street 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09793078inf-030780247 is 1.61974 over 170 frames.
+nsc-part2-chn0-spk09793078inf-030780268 __Kampong_Bahru __Prome_Road and __North_Buona_Vista_Drive 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09793078inf-030780268 is 1.60784 over 185 frames.
+nsc-part2-chn0-spk09793078inf-030780302 __Seletar_Lodge_One __Jalan_Hari_Raya and __Hindhede_Road 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09793078inf-030780302 is 1.5681 over 253 frames.
+nsc-part2-chn0-spk09793078inf-030780388 do ways confirmed driver 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09793078inf-030780388 is 1.28612 over 98 frames.
+nsc-part2-chn0-spk09793078inf-030780411 __Pan_Pacific hotel __Bukit_Timah __Shopping_Centre in __Jalan_Layang_Layang 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09793078inf-030780411 is 1.58406 over 248 frames.
+nsc-part2-chn0-spk09793078inf-030780434 __Singapore_Conference all urgently avenue two and dear mural hotel 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09793078inf-030780434 is 1.46539 over 240 frames.
+nsc-part2-chn0-spk09793078inf-030781760 __Upper_Seletar_Reservoir __Sennett_Road and is issuer school of biology 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09793078inf-030781760 is 1.48306 over 216 frames.
+nsc-part2-chn0-spk09793078inf-030781764 __Lim_Chong_Pang __Aliman_Hassan in __Sunny_Ang 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09793078inf-030781764 is 1.5759 over 169 frames.
+LOG (apply-cmvn[5.5.888~1-d619]:main():apply-cmvn.cc:81) Copied 124 utterances.
+nsc-part2-chn0-spk09793078inf-030781773 institute or chemical and engineering sign sis __Bedok_Green primary school and __Jalan_Tiga_Ratus 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09793078inf-030781773 is 1.61979 over 326 frames.
+nsc-part2-chn0-spk09793078inf-030781887 __Seletar_North_Lane one somewhere times and please full loft 
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09793078inf-030781887 is 1.54823 over 198 frames.
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:main():nnet3-latgen-faster.cc:256) Time taken 459.347s: real-time factor assuming 100 frames/sec is 0.685972
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:main():nnet3-latgen-faster.cc:259) Done 124 utterances, failed for 0
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:main():nnet3-latgen-faster.cc:261) Overall log-likelihood per frame is 1.55055 over 22321 frames.
+LOG (nnet3-latgen-faster[5.5.888~1-d619]:~CachingOptimizingCompiler():nnet-optimize.cc:710) 0.663 seconds taken in nnet3 compilation total (breakdown: 0.456 compilation, 0.125 optimization, 0 shortcut expansion, 0.0243 checking, 0.00016 computing indexes, 0.0583 misc.) + 0 I/O.
+LOG (lattice-scale[5.5.888~1-d619]:main():lattice-scale.cc:107) Done 124 lattices.
+# Ended (code 0) at Wed Aug 25 19:08:19 +08 2021, elapsed time 507 seconds

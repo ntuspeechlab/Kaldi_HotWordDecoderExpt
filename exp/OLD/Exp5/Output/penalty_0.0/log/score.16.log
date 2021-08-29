@@ -1,0 +1,5 @@
+# cat /home3/ztkyaw/w2021/deliverables/contrast-zin-dev/baseline/tdnnf-transfer-sp/decode_imda-part2_1629943701-hw_lmg/scoring_kaldi/penalty_0.0/16.txt | compute-wer --text --mode=present ark:/home3/ztkyaw/w2021/deliverables/contrast-zin-dev/baseline/tdnnf-transfer-sp/decode_imda-part2_1629943701-hw_lmg/scoring_kaldi/test_filt.txt ark,p:- >& /home3/ztkyaw/w2021/deliverables/contrast-zin-dev/baseline/tdnnf-transfer-sp/decode_imda-part2_1629943701-hw_lmg/wer_16_0.0 
+# Invoked at Thu Aug 26 10:19:21 SGT 2021 from node05
+#
+# Started at Thu Aug 26 10:19:38 SGT 2021 on node03
+# Ended (code 0) at Thu Aug 26 10:19:38 SGT 2021, elapsed time 17 seconds

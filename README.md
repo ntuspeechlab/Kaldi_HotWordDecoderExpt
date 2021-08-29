@@ -1,28 +1,26 @@
 #Filename: readme.md
 #Author: Chng Eng SIong
-#~/HardWordDecoderExp
-
 #This directory contains HOW we are going to do the hotword decoder experiment
 
+Requirements:
+1) kaldi to be setup
+2) python3 and some libraries: words (nltk), pandas
 
-Directory description:
-1) ~/HotWordDecoderExp/data
-	a) MasterDecoder (the files needed to create the Master decoder
-	b) The testdata (wavefiles, etc) we going to test
+3) Read hwSetup.json
+	-> this is the json file specifiying all the parameters and folders for the 
+	-> hotword expt
+	-> each expt will create a folder and dump the hotword decoder and results there
 
+4) You can run.sh and follow the steps
+  -> goto ./exp/Exp6/ to see whats happening in this example
+  -> the decoded data simulation came from ./exp/expClean
+  
 
-2) ~/HotWordDecoderExp/utils
-	a) the scripts (python,bash) to support the experiments
+python3  S0_setupPath.py  --json $HWSETUP_FileName
+python3  S1_createhotWordLexiconUnigram.py --json $HWSETUP_FileName
+python3  S2_3.py --json $HWSETUP_FileName
+python3  S4_combineCTM.py --json $HWSETUP_FileName
+python3  S5a_CTM_toWERscoring_Text.py --json $HWSETUP_FileName
+python3  S5b_scoreCTM_WER.py --json $HWSETUP_FileName
+python3  S5c_scorePenalySettings_WER.py --json $HWSETUP_FileName
 
-
-3) ~/HotWordDecoderExp/exp
-	a) exp output
-	
-
-
-
-Steps:
-1) python3 local/createExp.py --setup exp/exp3.json
-	// create the directory using exp3.json information
-
-	

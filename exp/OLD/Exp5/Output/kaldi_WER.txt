@@ -1,0 +1,495 @@
+======================
+Expt:
+Kaldi-CTM-File= ./../exp/Exp5/Output/penalty_0.0/7.txt
+./../data/TestData/groundTruth_HOTWordONLY.txt
+16:48:25,444 run_KaldiCheckWER.py INFO [libCTM.py:188] Reading CTM Text File : (./../exp/Exp5/Output/penalty_0.0/7.txt)
+16:48:29,376 run_KaldiCheckWER.py INFO [libCTM.py:202] Writing Text File : (./../exp/Exp5/Output/penalty_0.0/7_HOTWordONLY.txt)
+16:48:29,378 run_KaldiCheckWER.py INFO [libCTM.py:219] Completed Text File (./../exp/Exp5/Output/penalty_0.0/7_HOTWordONLY.txt) has (1176) entries
+saved: ./../exp/Exp5/Output/penalty_0.0/7_HOTWordONLY.txt
+/home/eschng/kaldi/src/bin/compute-wer --text --mode=present ark:./../data/TestData/groundTruth_HOTWordONLY.txt ark:./../exp/Exp5/Output/penalty_0.0/7_HOTWordONLY.txt
+%WER 42.26 [ 901 / 2132, 103 ins, 543 del, 255 sub ]
+%SER 55.53 [ 653 / 1176 ]
+Scored 1176 sentences, 0 not present in hyp.
+
+--------------
+
+======================
+Expt:
+Kaldi-CTM-File= ./../exp/Exp5/Output/penalty_0.0/8.txt
+./../data/TestData/groundTruth_HOTWordONLY.txt
+16:48:29,441 run_KaldiCheckWER.py INFO [libCTM.py:188] Reading CTM Text File : (./../exp/Exp5/Output/penalty_0.0/8.txt)
+16:48:33,279 run_KaldiCheckWER.py INFO [libCTM.py:202] Writing Text File : (./../exp/Exp5/Output/penalty_0.0/8_HOTWordONLY.txt)
+16:48:33,281 run_KaldiCheckWER.py INFO [libCTM.py:219] Completed Text File (./../exp/Exp5/Output/penalty_0.0/8_HOTWordONLY.txt) has (1176) entries
+saved: ./../exp/Exp5/Output/penalty_0.0/8_HOTWordONLY.txt
+/home/eschng/kaldi/src/bin/compute-wer --text --mode=present ark:./../data/TestData/groundTruth_HOTWordONLY.txt ark:./../exp/Exp5/Output/penalty_0.0/8_HOTWordONLY.txt
+%WER 37.90 [ 808 / 2132, 122 ins, 449 del, 237 sub ]
+%SER 51.53 [ 606 / 1176 ]
+Scored 1176 sentences, 0 not present in hyp.
+
+--------------
+
+======================
+Expt:
+Kaldi-CTM-File= ./../exp/Exp5/Output/penalty_0.0/9.txt
+./../data/TestData/groundTruth_HOTWordONLY.txt
+16:48:33,334 run_KaldiCheckWER.py INFO [libCTM.py:188] Reading CTM Text File : (./../exp/Exp5/Output/penalty_0.0/9.txt)
+16:48:37,393 run_KaldiCheckWER.py INFO [libCTM.py:202] Writing Text File : (./../exp/Exp5/Output/penalty_0.0/9_HOTWordONLY.txt)
+16:48:37,396 run_KaldiCheckWER.py INFO [libCTM.py:219] Completed Text File (./../exp/Exp5/Output/penalty_0.0/9_HOTWordONLY.txt) has (1176) entries
+saved: ./../exp/Exp5/Output/penalty_0.0/9_HOTWordONLY.txt
+/home/eschng/kaldi/src/bin/compute-wer --text --mode=present ark:./../data/TestData/groundTruth_HOTWordONLY.txt ark:./../exp/Exp5/Output/penalty_0.0/9_HOTWordONLY.txt
+%WER 34.29 [ 731 / 2132, 137 ins, 369 del, 225 sub ]
+%SER 48.04 [ 565 / 1176 ]
+Scored 1176 sentences, 0 not present in hyp.
+
+--------------
+
+======================
+Expt:
+Kaldi-CTM-File= ./../exp/Exp5/Output/penalty_0.0/10.txt
+./../data/TestData/groundTruth_HOTWordONLY.txt
+16:48:37,449 run_KaldiCheckWER.py INFO [libCTM.py:188] Reading CTM Text File : (./../exp/Exp5/Output/penalty_0.0/10.txt)
+16:48:41,197 run_KaldiCheckWER.py INFO [libCTM.py:202] Writing Text File : (./../exp/Exp5/Output/penalty_0.0/10_HOTWordONLY.txt)
+16:48:41,199 run_KaldiCheckWER.py INFO [libCTM.py:219] Completed Text File (./../exp/Exp5/Output/penalty_0.0/10_HOTWordONLY.txt) has (1175) entries
+saved: ./../exp/Exp5/Output/penalty_0.0/10_HOTWordONLY.txt
+/home/eschng/kaldi/src/bin/compute-wer --text --mode=present ark:./../data/TestData/groundTruth_HOTWordONLY.txt ark:./../exp/Exp5/Output/penalty_0.0/10_HOTWordONLY.txt
+%WER 31.72 [ 676 / 2131, 167 ins, 297 del, 212 sub ] [PARTIAL]
+%SER 45.70 [ 537 / 1175 ]
+Scored 1175 sentences, 1 not present in hyp.
+
+--------------
+
+======================
+Expt:
+Kaldi-CTM-File= ./../exp/Exp5/Output/penalty_0.0/11.txt
+./../data/TestData/groundTruth_HOTWordONLY.txt
+16:48:41,253 run_KaldiCheckWER.py INFO [libCTM.py:188] Reading CTM Text File : (./../exp/Exp5/Output/penalty_0.0/11.txt)
+16:48:44,967 run_KaldiCheckWER.py INFO [libCTM.py:202] Writing Text File : (./../exp/Exp5/Output/penalty_0.0/11_HOTWordONLY.txt)
+16:48:44,969 run_KaldiCheckWER.py INFO [libCTM.py:219] Completed Text File (./../exp/Exp5/Output/penalty_0.0/11_HOTWordONLY.txt) has (1174) entries
+saved: ./../exp/Exp5/Output/penalty_0.0/11_HOTWordONLY.txt
+/home/eschng/kaldi/src/bin/compute-wer --text --mode=present ark:./../data/TestData/groundTruth_HOTWordONLY.txt ark:./../exp/Exp5/Output/penalty_0.0/11_HOTWordONLY.txt
+%WER 30.56 [ 651 / 2130, 190 ins, 257 del, 204 sub ] [PARTIAL]
+%SER 43.87 [ 515 / 1174 ]
+Scored 1174 sentences, 2 not present in hyp.
+
+--------------
+
+======================
+Expt:
+Kaldi-CTM-File= ./../exp/Exp5/Output/penalty_0.0/12.txt
+./../data/TestData/groundTruth_HOTWordONLY.txt
+16:48:45,22 run_KaldiCheckWER.py INFO [libCTM.py:188] Reading CTM Text File : (./../exp/Exp5/Output/penalty_0.0/12.txt)
+16:48:48,745 run_KaldiCheckWER.py INFO [libCTM.py:202] Writing Text File : (./../exp/Exp5/Output/penalty_0.0/12_HOTWordONLY.txt)
+16:48:48,748 run_KaldiCheckWER.py INFO [libCTM.py:219] Completed Text File (./../exp/Exp5/Output/penalty_0.0/12_HOTWordONLY.txt) has (1173) entries
+saved: ./../exp/Exp5/Output/penalty_0.0/12_HOTWordONLY.txt
+/home/eschng/kaldi/src/bin/compute-wer --text --mode=present ark:./../data/TestData/groundTruth_HOTWordONLY.txt ark:./../exp/Exp5/Output/penalty_0.0/12_HOTWordONLY.txt
+%WER 28.64 [ 610 / 2130, 208 ins, 209 del, 193 sub ] [PARTIAL]
+%SER 41.69 [ 489 / 1173 ]
+Scored 1173 sentences, 3 not present in hyp.
+
+--------------
+
+======================
+Expt:
+Kaldi-CTM-File= ./../exp/Exp5/Output/penalty_0.0/13.txt
+./../data/TestData/groundTruth_HOTWordONLY.txt
+16:48:48,798 run_KaldiCheckWER.py INFO [libCTM.py:188] Reading CTM Text File : (./../exp/Exp5/Output/penalty_0.0/13.txt)
+16:48:52,632 run_KaldiCheckWER.py INFO [libCTM.py:202] Writing Text File : (./../exp/Exp5/Output/penalty_0.0/13_HOTWordONLY.txt)
+16:48:52,635 run_KaldiCheckWER.py INFO [libCTM.py:219] Completed Text File (./../exp/Exp5/Output/penalty_0.0/13_HOTWordONLY.txt) has (1172) entries
+saved: ./../exp/Exp5/Output/penalty_0.0/13_HOTWordONLY.txt
+/home/eschng/kaldi/src/bin/compute-wer --text --mode=present ark:./../data/TestData/groundTruth_HOTWordONLY.txt ark:./../exp/Exp5/Output/penalty_0.0/13_HOTWordONLY.txt
+%WER 28.28 [ 602 / 2129, 235 ins, 187 del, 180 sub ] [PARTIAL]
+%SER 40.53 [ 475 / 1172 ]
+Scored 1172 sentences, 4 not present in hyp.
+
+--------------
+
+======================
+Expt:
+Kaldi-CTM-File= ./../exp/Exp5/Output/penalty_0.0/14.txt
+./../data/TestData/groundTruth_HOTWordONLY.txt
+16:48:52,686 run_KaldiCheckWER.py INFO [libCTM.py:188] Reading CTM Text File : (./../exp/Exp5/Output/penalty_0.0/14.txt)
+16:48:56,317 run_KaldiCheckWER.py INFO [libCTM.py:202] Writing Text File : (./../exp/Exp5/Output/penalty_0.0/14_HOTWordONLY.txt)
+16:48:56,319 run_KaldiCheckWER.py INFO [libCTM.py:219] Completed Text File (./../exp/Exp5/Output/penalty_0.0/14_HOTWordONLY.txt) has (1172) entries
+saved: ./../exp/Exp5/Output/penalty_0.0/14_HOTWordONLY.txt
+/home/eschng/kaldi/src/bin/compute-wer --text --mode=present ark:./../data/TestData/groundTruth_HOTWordONLY.txt ark:./../exp/Exp5/Output/penalty_0.0/14_HOTWordONLY.txt
+%WER 28.65 [ 610 / 2129, 250 ins, 179 del, 181 sub ] [PARTIAL]
+%SER 41.98 [ 492 / 1172 ]
+Scored 1172 sentences, 4 not present in hyp.
+
+--------------
+
+======================
+Expt:
+Kaldi-CTM-File= ./../exp/Exp5/Output/penalty_0.0/15.txt
+./../data/TestData/groundTruth_HOTWordONLY.txt
+16:48:56,370 run_KaldiCheckWER.py INFO [libCTM.py:188] Reading CTM Text File : (./../exp/Exp5/Output/penalty_0.0/15.txt)
+16:49:00,47 run_KaldiCheckWER.py INFO [libCTM.py:202] Writing Text File : (./../exp/Exp5/Output/penalty_0.0/15_HOTWordONLY.txt)
+16:49:00,49 run_KaldiCheckWER.py INFO [libCTM.py:219] Completed Text File (./../exp/Exp5/Output/penalty_0.0/15_HOTWordONLY.txt) has (1171) entries
+saved: ./../exp/Exp5/Output/penalty_0.0/15_HOTWordONLY.txt
+/home/eschng/kaldi/src/bin/compute-wer --text --mode=present ark:./../data/TestData/groundTruth_HOTWordONLY.txt ark:./../exp/Exp5/Output/penalty_0.0/15_HOTWordONLY.txt
+%WER 28.56 [ 608 / 2129, 256 ins, 176 del, 176 sub ] [PARTIAL]
+%SER 41.93 [ 491 / 1171 ]
+Scored 1171 sentences, 5 not present in hyp.
+
+--------------
+
+======================
+Expt:
+Kaldi-CTM-File= ./../exp/Exp5/Output/penalty_0.0/16.txt
+./../data/TestData/groundTruth_HOTWordONLY.txt
+16:49:00,108 run_KaldiCheckWER.py INFO [libCTM.py:188] Reading CTM Text File : (./../exp/Exp5/Output/penalty_0.0/16.txt)
+16:49:03,765 run_KaldiCheckWER.py INFO [libCTM.py:202] Writing Text File : (./../exp/Exp5/Output/penalty_0.0/16_HOTWordONLY.txt)
+16:49:03,767 run_KaldiCheckWER.py INFO [libCTM.py:219] Completed Text File (./../exp/Exp5/Output/penalty_0.0/16_HOTWordONLY.txt) has (1169) entries
+saved: ./../exp/Exp5/Output/penalty_0.0/16_HOTWordONLY.txt
+/home/eschng/kaldi/src/bin/compute-wer --text --mode=present ark:./../data/TestData/groundTruth_HOTWordONLY.txt ark:./../exp/Exp5/Output/penalty_0.0/16_HOTWordONLY.txt
+%WER 28.99 [ 617 / 2128, 267 ins, 178 del, 172 sub ] [PARTIAL]
+%SER 42.77 [ 500 / 1169 ]
+Scored 1169 sentences, 7 not present in hyp.
+
+--------------
+
+======================
+Expt:
+Kaldi-CTM-File= ./../exp/Exp5/Output/penalty_0.0/17.txt
+./../data/TestData/groundTruth_HOTWordONLY.txt
+16:49:03,827 run_KaldiCheckWER.py INFO [libCTM.py:188] Reading CTM Text File : (./../exp/Exp5/Output/penalty_0.0/17.txt)
+16:49:07,650 run_KaldiCheckWER.py INFO [libCTM.py:202] Writing Text File : (./../exp/Exp5/Output/penalty_0.0/17_HOTWordONLY.txt)
+16:49:07,654 run_KaldiCheckWER.py INFO [libCTM.py:219] Completed Text File (./../exp/Exp5/Output/penalty_0.0/17_HOTWordONLY.txt) has (1169) entries
+saved: ./../exp/Exp5/Output/penalty_0.0/17_HOTWordONLY.txt
+/home/eschng/kaldi/src/bin/compute-wer --text --mode=present ark:./../data/TestData/groundTruth_HOTWordONLY.txt ark:./../exp/Exp5/Output/penalty_0.0/17_HOTWordONLY.txt
+%WER 29.56 [ 629 / 2128, 282 ins, 177 del, 170 sub ] [PARTIAL]
+%SER 43.80 [ 512 / 1169 ]
+Scored 1169 sentences, 7 not present in hyp.
+
+--------------
+
+======================
+Expt:
+Kaldi-CTM-File= ./../exp/Exp5/Output/penalty_0.5/7.txt
+./../data/TestData/groundTruth_HOTWordONLY.txt
+16:49:07,723 run_KaldiCheckWER.py INFO [libCTM.py:188] Reading CTM Text File : (./../exp/Exp5/Output/penalty_0.5/7.txt)
+16:49:11,583 run_KaldiCheckWER.py INFO [libCTM.py:202] Writing Text File : (./../exp/Exp5/Output/penalty_0.5/7_HOTWordONLY.txt)
+16:49:11,585 run_KaldiCheckWER.py INFO [libCTM.py:219] Completed Text File (./../exp/Exp5/Output/penalty_0.5/7_HOTWordONLY.txt) has (1176) entries
+saved: ./../exp/Exp5/Output/penalty_0.5/7_HOTWordONLY.txt
+/home/eschng/kaldi/src/bin/compute-wer --text --mode=present ark:./../data/TestData/groundTruth_HOTWordONLY.txt ark:./../exp/Exp5/Output/penalty_0.5/7_HOTWordONLY.txt
+%WER 40.57 [ 865 / 2132, 111 ins, 506 del, 248 sub ]
+%SER 54.08 [ 636 / 1176 ]
+Scored 1176 sentences, 0 not present in hyp.
+
+--------------
+
+======================
+Expt:
+Kaldi-CTM-File= ./../exp/Exp5/Output/penalty_0.5/8.txt
+./../data/TestData/groundTruth_HOTWordONLY.txt
+16:49:11,642 run_KaldiCheckWER.py INFO [libCTM.py:188] Reading CTM Text File : (./../exp/Exp5/Output/penalty_0.5/8.txt)
+16:49:15,438 run_KaldiCheckWER.py INFO [libCTM.py:202] Writing Text File : (./../exp/Exp5/Output/penalty_0.5/8_HOTWordONLY.txt)
+16:49:15,441 run_KaldiCheckWER.py INFO [libCTM.py:219] Completed Text File (./../exp/Exp5/Output/penalty_0.5/8_HOTWordONLY.txt) has (1176) entries
+saved: ./../exp/Exp5/Output/penalty_0.5/8_HOTWordONLY.txt
+/home/eschng/kaldi/src/bin/compute-wer --text --mode=present ark:./../data/TestData/groundTruth_HOTWordONLY.txt ark:./../exp/Exp5/Output/penalty_0.5/8_HOTWordONLY.txt
+%WER 36.35 [ 775 / 2132, 129 ins, 419 del, 227 sub ]
+%SER 50.34 [ 592 / 1176 ]
+Scored 1176 sentences, 0 not present in hyp.
+
+--------------
+
+======================
+Expt:
+Kaldi-CTM-File= ./../exp/Exp5/Output/penalty_0.5/9.txt
+./../data/TestData/groundTruth_HOTWordONLY.txt
+16:49:15,531 run_KaldiCheckWER.py INFO [libCTM.py:188] Reading CTM Text File : (./../exp/Exp5/Output/penalty_0.5/9.txt)
+16:49:19,490 run_KaldiCheckWER.py INFO [libCTM.py:202] Writing Text File : (./../exp/Exp5/Output/penalty_0.5/9_HOTWordONLY.txt)
+16:49:19,493 run_KaldiCheckWER.py INFO [libCTM.py:219] Completed Text File (./../exp/Exp5/Output/penalty_0.5/9_HOTWordONLY.txt) has (1176) entries
+saved: ./../exp/Exp5/Output/penalty_0.5/9_HOTWordONLY.txt
+/home/eschng/kaldi/src/bin/compute-wer --text --mode=present ark:./../data/TestData/groundTruth_HOTWordONLY.txt ark:./../exp/Exp5/Output/penalty_0.5/9_HOTWordONLY.txt
+%WER 33.16 [ 707 / 2132, 146 ins, 340 del, 221 sub ]
+%SER 47.02 [ 553 / 1176 ]
+Scored 1176 sentences, 0 not present in hyp.
+
+--------------
+
+======================
+Expt:
+Kaldi-CTM-File= ./../exp/Exp5/Output/penalty_0.5/10.txt
+./../data/TestData/groundTruth_HOTWordONLY.txt
+16:49:19,547 run_KaldiCheckWER.py INFO [libCTM.py:188] Reading CTM Text File : (./../exp/Exp5/Output/penalty_0.5/10.txt)
+16:49:23,437 run_KaldiCheckWER.py INFO [libCTM.py:202] Writing Text File : (./../exp/Exp5/Output/penalty_0.5/10_HOTWordONLY.txt)
+16:49:23,440 run_KaldiCheckWER.py INFO [libCTM.py:219] Completed Text File (./../exp/Exp5/Output/penalty_0.5/10_HOTWordONLY.txt) has (1175) entries
+saved: ./../exp/Exp5/Output/penalty_0.5/10_HOTWordONLY.txt
+/home/eschng/kaldi/src/bin/compute-wer --text --mode=present ark:./../data/TestData/groundTruth_HOTWordONLY.txt ark:./../exp/Exp5/Output/penalty_0.5/10_HOTWordONLY.txt
+%WER 31.11 [ 663 / 2131, 177 ins, 279 del, 207 sub ] [PARTIAL]
+%SER 44.68 [ 525 / 1175 ]
+Scored 1175 sentences, 1 not present in hyp.
+
+--------------
+
+======================
+Expt:
+Kaldi-CTM-File= ./../exp/Exp5/Output/penalty_0.5/11.txt
+./../data/TestData/groundTruth_HOTWordONLY.txt
+16:49:23,501 run_KaldiCheckWER.py INFO [libCTM.py:188] Reading CTM Text File : (./../exp/Exp5/Output/penalty_0.5/11.txt)
+16:49:27,387 run_KaldiCheckWER.py INFO [libCTM.py:202] Writing Text File : (./../exp/Exp5/Output/penalty_0.5/11_HOTWordONLY.txt)
+16:49:27,390 run_KaldiCheckWER.py INFO [libCTM.py:219] Completed Text File (./../exp/Exp5/Output/penalty_0.5/11_HOTWordONLY.txt) has (1174) entries
+saved: ./../exp/Exp5/Output/penalty_0.5/11_HOTWordONLY.txt
+/home/eschng/kaldi/src/bin/compute-wer --text --mode=present ark:./../data/TestData/groundTruth_HOTWordONLY.txt ark:./../exp/Exp5/Output/penalty_0.5/11_HOTWordONLY.txt
+%WER 29.58 [ 630 / 2130, 197 ins, 234 del, 199 sub ] [PARTIAL]
+%SER 42.84 [ 503 / 1174 ]
+Scored 1174 sentences, 2 not present in hyp.
+
+--------------
+
+======================
+Expt:
+Kaldi-CTM-File= ./../exp/Exp5/Output/penalty_0.5/12.txt
+./../data/TestData/groundTruth_HOTWordONLY.txt
+16:49:27,451 run_KaldiCheckWER.py INFO [libCTM.py:188] Reading CTM Text File : (./../exp/Exp5/Output/penalty_0.5/12.txt)
+16:49:31,173 run_KaldiCheckWER.py INFO [libCTM.py:202] Writing Text File : (./../exp/Exp5/Output/penalty_0.5/12_HOTWordONLY.txt)
+16:49:31,175 run_KaldiCheckWER.py INFO [libCTM.py:219] Completed Text File (./../exp/Exp5/Output/penalty_0.5/12_HOTWordONLY.txt) has (1172) entries
+saved: ./../exp/Exp5/Output/penalty_0.5/12_HOTWordONLY.txt
+/home/eschng/kaldi/src/bin/compute-wer --text --mode=present ark:./../data/TestData/groundTruth_HOTWordONLY.txt ark:./../exp/Exp5/Output/penalty_0.5/12_HOTWordONLY.txt
+%WER 28.37 [ 604 / 2129, 227 ins, 195 del, 182 sub ] [PARTIAL]
+%SER 41.13 [ 482 / 1172 ]
+Scored 1172 sentences, 4 not present in hyp.
+
+--------------
+
+======================
+Expt:
+Kaldi-CTM-File= ./../exp/Exp5/Output/penalty_0.5/13.txt
+./../data/TestData/groundTruth_HOTWordONLY.txt
+16:49:31,229 run_KaldiCheckWER.py INFO [libCTM.py:188] Reading CTM Text File : (./../exp/Exp5/Output/penalty_0.5/13.txt)
+16:49:34,939 run_KaldiCheckWER.py INFO [libCTM.py:202] Writing Text File : (./../exp/Exp5/Output/penalty_0.5/13_HOTWordONLY.txt)
+16:49:34,942 run_KaldiCheckWER.py INFO [libCTM.py:219] Completed Text File (./../exp/Exp5/Output/penalty_0.5/13_HOTWordONLY.txt) has (1172) entries
+saved: ./../exp/Exp5/Output/penalty_0.5/13_HOTWordONLY.txt
+/home/eschng/kaldi/src/bin/compute-wer --text --mode=present ark:./../data/TestData/groundTruth_HOTWordONLY.txt ark:./../exp/Exp5/Output/penalty_0.5/13_HOTWordONLY.txt
+%WER 28.60 [ 609 / 2129, 245 ins, 183 del, 181 sub ] [PARTIAL]
+%SER 41.47 [ 486 / 1172 ]
+Scored 1172 sentences, 4 not present in hyp.
+
+--------------
+
+======================
+Expt:
+Kaldi-CTM-File= ./../exp/Exp5/Output/penalty_0.5/14.txt
+./../data/TestData/groundTruth_HOTWordONLY.txt
+16:49:35,0 run_KaldiCheckWER.py INFO [libCTM.py:188] Reading CTM Text File : (./../exp/Exp5/Output/penalty_0.5/14.txt)
+16:49:38,872 run_KaldiCheckWER.py INFO [libCTM.py:202] Writing Text File : (./../exp/Exp5/Output/penalty_0.5/14_HOTWordONLY.txt)
+16:49:38,875 run_KaldiCheckWER.py INFO [libCTM.py:219] Completed Text File (./../exp/Exp5/Output/penalty_0.5/14_HOTWordONLY.txt) has (1171) entries
+saved: ./../exp/Exp5/Output/penalty_0.5/14_HOTWordONLY.txt
+/home/eschng/kaldi/src/bin/compute-wer --text --mode=present ark:./../data/TestData/groundTruth_HOTWordONLY.txt ark:./../exp/Exp5/Output/penalty_0.5/14_HOTWordONLY.txt
+%WER 28.70 [ 611 / 2129, 253 ins, 185 del, 173 sub ] [PARTIAL]
+%SER 42.02 [ 492 / 1171 ]
+Scored 1171 sentences, 5 not present in hyp.
+
+--------------
+
+======================
+Expt:
+Kaldi-CTM-File= ./../exp/Exp5/Output/penalty_0.5/15.txt
+./../data/TestData/groundTruth_HOTWordONLY.txt
+16:49:38,935 run_KaldiCheckWER.py INFO [libCTM.py:188] Reading CTM Text File : (./../exp/Exp5/Output/penalty_0.5/15.txt)
+16:49:42,653 run_KaldiCheckWER.py INFO [libCTM.py:202] Writing Text File : (./../exp/Exp5/Output/penalty_0.5/15_HOTWordONLY.txt)
+16:49:42,657 run_KaldiCheckWER.py INFO [libCTM.py:219] Completed Text File (./../exp/Exp5/Output/penalty_0.5/15_HOTWordONLY.txt) has (1169) entries
+saved: ./../exp/Exp5/Output/penalty_0.5/15_HOTWordONLY.txt
+/home/eschng/kaldi/src/bin/compute-wer --text --mode=present ark:./../data/TestData/groundTruth_HOTWordONLY.txt ark:./../exp/Exp5/Output/penalty_0.5/15_HOTWordONLY.txt
+%WER 28.90 [ 615 / 2128, 264 ins, 180 del, 171 sub ] [PARTIAL]
+%SER 42.51 [ 497 / 1169 ]
+Scored 1169 sentences, 7 not present in hyp.
+
+--------------
+
+======================
+Expt:
+Kaldi-CTM-File= ./../exp/Exp5/Output/penalty_0.5/16.txt
+./../data/TestData/groundTruth_HOTWordONLY.txt
+16:49:42,708 run_KaldiCheckWER.py INFO [libCTM.py:188] Reading CTM Text File : (./../exp/Exp5/Output/penalty_0.5/16.txt)
+16:49:46,441 run_KaldiCheckWER.py INFO [libCTM.py:202] Writing Text File : (./../exp/Exp5/Output/penalty_0.5/16_HOTWordONLY.txt)
+16:49:46,444 run_KaldiCheckWER.py INFO [libCTM.py:219] Completed Text File (./../exp/Exp5/Output/penalty_0.5/16_HOTWordONLY.txt) has (1169) entries
+saved: ./../exp/Exp5/Output/penalty_0.5/16_HOTWordONLY.txt
+/home/eschng/kaldi/src/bin/compute-wer --text --mode=present ark:./../data/TestData/groundTruth_HOTWordONLY.txt ark:./../exp/Exp5/Output/penalty_0.5/16_HOTWordONLY.txt
+%WER 29.56 [ 629 / 2128, 279 ins, 181 del, 169 sub ] [PARTIAL]
+%SER 43.71 [ 511 / 1169 ]
+Scored 1169 sentences, 7 not present in hyp.
+
+--------------
+
+======================
+Expt:
+Kaldi-CTM-File= ./../exp/Exp5/Output/penalty_0.5/17.txt
+./../data/TestData/groundTruth_HOTWordONLY.txt
+16:49:46,509 run_KaldiCheckWER.py INFO [libCTM.py:188] Reading CTM Text File : (./../exp/Exp5/Output/penalty_0.5/17.txt)
+16:49:50,177 run_KaldiCheckWER.py INFO [libCTM.py:202] Writing Text File : (./../exp/Exp5/Output/penalty_0.5/17_HOTWordONLY.txt)
+16:49:50,180 run_KaldiCheckWER.py INFO [libCTM.py:219] Completed Text File (./../exp/Exp5/Output/penalty_0.5/17_HOTWordONLY.txt) has (1168) entries
+saved: ./../exp/Exp5/Output/penalty_0.5/17_HOTWordONLY.txt
+/home/eschng/kaldi/src/bin/compute-wer --text --mode=present ark:./../data/TestData/groundTruth_HOTWordONLY.txt ark:./../exp/Exp5/Output/penalty_0.5/17_HOTWordONLY.txt
+%WER 30.18 [ 642 / 2127, 292 ins, 178 del, 172 sub ] [PARTIAL]
+%SER 44.52 [ 520 / 1168 ]
+Scored 1168 sentences, 8 not present in hyp.
+
+--------------
+
+======================
+Expt:
+Kaldi-CTM-File= ./../exp/Exp5/Output/penalty_1.0/7.txt
+./../data/TestData/groundTruth_HOTWordONLY.txt
+16:49:50,243 run_KaldiCheckWER.py INFO [libCTM.py:188] Reading CTM Text File : (./../exp/Exp5/Output/penalty_1.0/7.txt)
+16:49:54,79 run_KaldiCheckWER.py INFO [libCTM.py:202] Writing Text File : (./../exp/Exp5/Output/penalty_1.0/7_HOTWordONLY.txt)
+16:49:54,81 run_KaldiCheckWER.py INFO [libCTM.py:219] Completed Text File (./../exp/Exp5/Output/penalty_1.0/7_HOTWordONLY.txt) has (1176) entries
+saved: ./../exp/Exp5/Output/penalty_1.0/7_HOTWordONLY.txt
+/home/eschng/kaldi/src/bin/compute-wer --text --mode=present ark:./../data/TestData/groundTruth_HOTWordONLY.txt ark:./../exp/Exp5/Output/penalty_1.0/7_HOTWordONLY.txt
+%WER 38.88 [ 829 / 2132, 114 ins, 475 del, 240 sub ]
+%SER 52.64 [ 619 / 1176 ]
+Scored 1176 sentences, 0 not present in hyp.
+
+--------------
+
+======================
+Expt:
+Kaldi-CTM-File= ./../exp/Exp5/Output/penalty_1.0/8.txt
+./../data/TestData/groundTruth_HOTWordONLY.txt
+16:49:54,132 run_KaldiCheckWER.py INFO [libCTM.py:188] Reading CTM Text File : (./../exp/Exp5/Output/penalty_1.0/8.txt)
+16:49:57,968 run_KaldiCheckWER.py INFO [libCTM.py:202] Writing Text File : (./../exp/Exp5/Output/penalty_1.0/8_HOTWordONLY.txt)
+16:49:57,970 run_KaldiCheckWER.py INFO [libCTM.py:219] Completed Text File (./../exp/Exp5/Output/penalty_1.0/8_HOTWordONLY.txt) has (1176) entries
+saved: ./../exp/Exp5/Output/penalty_1.0/8_HOTWordONLY.txt
+/home/eschng/kaldi/src/bin/compute-wer --text --mode=present ark:./../data/TestData/groundTruth_HOTWordONLY.txt ark:./../exp/Exp5/Output/penalty_1.0/8_HOTWordONLY.txt
+%WER 34.76 [ 741 / 2132, 133 ins, 381 del, 227 sub ]
+%SER 48.64 [ 572 / 1176 ]
+Scored 1176 sentences, 0 not present in hyp.
+
+--------------
+
+======================
+Expt:
+Kaldi-CTM-File= ./../exp/Exp5/Output/penalty_1.0/9.txt
+./../data/TestData/groundTruth_HOTWordONLY.txt
+16:49:58,23 run_KaldiCheckWER.py INFO [libCTM.py:188] Reading CTM Text File : (./../exp/Exp5/Output/penalty_1.0/9.txt)
+16:50:01,836 run_KaldiCheckWER.py INFO [libCTM.py:202] Writing Text File : (./../exp/Exp5/Output/penalty_1.0/9_HOTWordONLY.txt)
+16:50:01,839 run_KaldiCheckWER.py INFO [libCTM.py:219] Completed Text File (./../exp/Exp5/Output/penalty_1.0/9_HOTWordONLY.txt) has (1175) entries
+saved: ./../exp/Exp5/Output/penalty_1.0/9_HOTWordONLY.txt
+/home/eschng/kaldi/src/bin/compute-wer --text --mode=present ark:./../data/TestData/groundTruth_HOTWordONLY.txt ark:./../exp/Exp5/Output/penalty_1.0/9_HOTWordONLY.txt
+%WER 31.82 [ 678 / 2131, 163 ins, 303 del, 212 sub ] [PARTIAL]
+%SER 45.87 [ 539 / 1175 ]
+Scored 1175 sentences, 1 not present in hyp.
+
+--------------
+
+======================
+Expt:
+Kaldi-CTM-File= ./../exp/Exp5/Output/penalty_1.0/10.txt
+./../data/TestData/groundTruth_HOTWordONLY.txt
+16:50:01,901 run_KaldiCheckWER.py INFO [libCTM.py:188] Reading CTM Text File : (./../exp/Exp5/Output/penalty_1.0/10.txt)
+16:50:05,716 run_KaldiCheckWER.py INFO [libCTM.py:202] Writing Text File : (./../exp/Exp5/Output/penalty_1.0/10_HOTWordONLY.txt)
+16:50:05,720 run_KaldiCheckWER.py INFO [libCTM.py:219] Completed Text File (./../exp/Exp5/Output/penalty_1.0/10_HOTWordONLY.txt) has (1174) entries
+saved: ./../exp/Exp5/Output/penalty_1.0/10_HOTWordONLY.txt
+/home/eschng/kaldi/src/bin/compute-wer --text --mode=present ark:./../data/TestData/groundTruth_HOTWordONLY.txt ark:./../exp/Exp5/Output/penalty_1.0/10_HOTWordONLY.txt
+%WER 30.61 [ 652 / 2130, 191 ins, 261 del, 200 sub ] [PARTIAL]
+%SER 43.70 [ 513 / 1174 ]
+Scored 1174 sentences, 2 not present in hyp.
+
+--------------
+
+======================
+Expt:
+Kaldi-CTM-File= ./../exp/Exp5/Output/penalty_1.0/11.txt
+./../data/TestData/groundTruth_HOTWordONLY.txt
+16:50:05,786 run_KaldiCheckWER.py INFO [libCTM.py:188] Reading CTM Text File : (./../exp/Exp5/Output/penalty_1.0/11.txt)
+16:50:09,662 run_KaldiCheckWER.py INFO [libCTM.py:202] Writing Text File : (./../exp/Exp5/Output/penalty_1.0/11_HOTWordONLY.txt)
+16:50:09,664 run_KaldiCheckWER.py INFO [libCTM.py:219] Completed Text File (./../exp/Exp5/Output/penalty_1.0/11_HOTWordONLY.txt) has (1173) entries
+saved: ./../exp/Exp5/Output/penalty_1.0/11_HOTWordONLY.txt
+/home/eschng/kaldi/src/bin/compute-wer --text --mode=present ark:./../data/TestData/groundTruth_HOTWordONLY.txt ark:./../exp/Exp5/Output/penalty_1.0/11_HOTWordONLY.txt
+%WER 28.73 [ 612 / 2130, 216 ins, 213 del, 183 sub ] [PARTIAL]
+%SER 41.43 [ 486 / 1173 ]
+Scored 1173 sentences, 3 not present in hyp.
+
+--------------
+
+======================
+Expt:
+Kaldi-CTM-File= ./../exp/Exp5/Output/penalty_1.0/12.txt
+./../data/TestData/groundTruth_HOTWordONLY.txt
+16:50:09,728 run_KaldiCheckWER.py INFO [libCTM.py:188] Reading CTM Text File : (./../exp/Exp5/Output/penalty_1.0/12.txt)
+16:50:13,537 run_KaldiCheckWER.py INFO [libCTM.py:202] Writing Text File : (./../exp/Exp5/Output/penalty_1.0/12_HOTWordONLY.txt)
+16:50:13,541 run_KaldiCheckWER.py INFO [libCTM.py:219] Completed Text File (./../exp/Exp5/Output/penalty_1.0/12_HOTWordONLY.txt) has (1172) entries
+saved: ./../exp/Exp5/Output/penalty_1.0/12_HOTWordONLY.txt
+/home/eschng/kaldi/src/bin/compute-wer --text --mode=present ark:./../data/TestData/groundTruth_HOTWordONLY.txt ark:./../exp/Exp5/Output/penalty_1.0/12_HOTWordONLY.txt
+%WER 28.32 [ 603 / 2129, 237 ins, 186 del, 180 sub ] [PARTIAL]
+%SER 40.78 [ 478 / 1172 ]
+Scored 1172 sentences, 4 not present in hyp.
+
+--------------
+
+======================
+Expt:
+Kaldi-CTM-File= ./../exp/Exp5/Output/penalty_1.0/13.txt
+./../data/TestData/groundTruth_HOTWordONLY.txt
+16:50:13,599 run_KaldiCheckWER.py INFO [libCTM.py:188] Reading CTM Text File : (./../exp/Exp5/Output/penalty_1.0/13.txt)
+16:50:17,279 run_KaldiCheckWER.py INFO [libCTM.py:202] Writing Text File : (./../exp/Exp5/Output/penalty_1.0/13_HOTWordONLY.txt)
+16:50:17,281 run_KaldiCheckWER.py INFO [libCTM.py:219] Completed Text File (./../exp/Exp5/Output/penalty_1.0/13_HOTWordONLY.txt) has (1171) entries
+saved: ./../exp/Exp5/Output/penalty_1.0/13_HOTWordONLY.txt
+/home/eschng/kaldi/src/bin/compute-wer --text --mode=present ark:./../data/TestData/groundTruth_HOTWordONLY.txt ark:./../exp/Exp5/Output/penalty_1.0/13_HOTWordONLY.txt
+%WER 28.79 [ 613 / 2129, 253 ins, 187 del, 173 sub ] [PARTIAL]
+%SER 42.02 [ 492 / 1171 ]
+Scored 1171 sentences, 5 not present in hyp.
+
+--------------
+
+======================
+Expt:
+Kaldi-CTM-File= ./../exp/Exp5/Output/penalty_1.0/14.txt
+./../data/TestData/groundTruth_HOTWordONLY.txt
+16:50:17,334 run_KaldiCheckWER.py INFO [libCTM.py:188] Reading CTM Text File : (./../exp/Exp5/Output/penalty_1.0/14.txt)
+16:50:21,29 run_KaldiCheckWER.py INFO [libCTM.py:202] Writing Text File : (./../exp/Exp5/Output/penalty_1.0/14_HOTWordONLY.txt)
+16:50:21,32 run_KaldiCheckWER.py INFO [libCTM.py:219] Completed Text File (./../exp/Exp5/Output/penalty_1.0/14_HOTWordONLY.txt) has (1169) entries
+saved: ./../exp/Exp5/Output/penalty_1.0/14_HOTWordONLY.txt
+/home/eschng/kaldi/src/bin/compute-wer --text --mode=present ark:./../data/TestData/groundTruth_HOTWordONLY.txt ark:./../exp/Exp5/Output/penalty_1.0/14_HOTWordONLY.txt
+%WER 28.81 [ 613 / 2128, 258 ins, 183 del, 172 sub ] [PARTIAL]
+%SER 42.60 [ 498 / 1169 ]
+Scored 1169 sentences, 7 not present in hyp.
+
+--------------
+
+======================
+Expt:
+Kaldi-CTM-File= ./../exp/Exp5/Output/penalty_1.0/15.txt
+./../data/TestData/groundTruth_HOTWordONLY.txt
+16:50:21,85 run_KaldiCheckWER.py INFO [libCTM.py:188] Reading CTM Text File : (./../exp/Exp5/Output/penalty_1.0/15.txt)
+16:50:24,843 run_KaldiCheckWER.py INFO [libCTM.py:202] Writing Text File : (./../exp/Exp5/Output/penalty_1.0/15_HOTWordONLY.txt)
+16:50:24,846 run_KaldiCheckWER.py INFO [libCTM.py:219] Completed Text File (./../exp/Exp5/Output/penalty_1.0/15_HOTWordONLY.txt) has (1169) entries
+saved: ./../exp/Exp5/Output/penalty_1.0/15_HOTWordONLY.txt
+/home/eschng/kaldi/src/bin/compute-wer --text --mode=present ark:./../data/TestData/groundTruth_HOTWordONLY.txt ark:./../exp/Exp5/Output/penalty_1.0/15_HOTWordONLY.txt
+%WER 29.23 [ 622 / 2128, 272 ins, 180 del, 170 sub ] [PARTIAL]
+%SER 43.28 [ 506 / 1169 ]
+Scored 1169 sentences, 7 not present in hyp.
+
+--------------
+
+======================
+Expt:
+Kaldi-CTM-File= ./../exp/Exp5/Output/penalty_1.0/16.txt
+./../data/TestData/groundTruth_HOTWordONLY.txt
+16:50:24,901 run_KaldiCheckWER.py INFO [libCTM.py:188] Reading CTM Text File : (./../exp/Exp5/Output/penalty_1.0/16.txt)
+16:50:28,767 run_KaldiCheckWER.py INFO [libCTM.py:202] Writing Text File : (./../exp/Exp5/Output/penalty_1.0/16_HOTWordONLY.txt)
+16:50:28,770 run_KaldiCheckWER.py INFO [libCTM.py:219] Completed Text File (./../exp/Exp5/Output/penalty_1.0/16_HOTWordONLY.txt) has (1168) entries
+saved: ./../exp/Exp5/Output/penalty_1.0/16_HOTWordONLY.txt
+/home/eschng/kaldi/src/bin/compute-wer --text --mode=present ark:./../data/TestData/groundTruth_HOTWordONLY.txt ark:./../exp/Exp5/Output/penalty_1.0/16_HOTWordONLY.txt
+%WER 30.04 [ 639 / 2127, 287 ins, 180 del, 172 sub ] [PARTIAL]
+%SER 44.26 [ 517 / 1168 ]
+Scored 1168 sentences, 8 not present in hyp.
+
+--------------
+
+======================
+Expt:
+Kaldi-CTM-File= ./../exp/Exp5/Output/penalty_1.0/17.txt
+./../data/TestData/groundTruth_HOTWordONLY.txt
+16:50:28,826 run_KaldiCheckWER.py INFO [libCTM.py:188] Reading CTM Text File : (./../exp/Exp5/Output/penalty_1.0/17.txt)
+16:50:32,468 run_KaldiCheckWER.py INFO [libCTM.py:202] Writing Text File : (./../exp/Exp5/Output/penalty_1.0/17_HOTWordONLY.txt)
+16:50:32,472 run_KaldiCheckWER.py INFO [libCTM.py:219] Completed Text File (./../exp/Exp5/Output/penalty_1.0/17_HOTWordONLY.txt) has (1167) entries
+saved: ./../exp/Exp5/Output/penalty_1.0/17_HOTWordONLY.txt
+/home/eschng/kaldi/src/bin/compute-wer --text --mode=present ark:./../data/TestData/groundTruth_HOTWordONLY.txt ark:./../exp/Exp5/Output/penalty_1.0/17_HOTWordONLY.txt
+%WER 30.57 [ 650 / 2126, 294 ins, 186 del, 170 sub ] [PARTIAL]
+%SER 45.16 [ 527 / 1167 ]
+Scored 1167 sentences, 9 not present in hyp.
+
+--------------
+eschng@SCSE-6201-22383:/mnt/d/Dropbox/Dropbox/Research/GitHub_Repo/Kaldi_HotWordDecoderExpt/local$

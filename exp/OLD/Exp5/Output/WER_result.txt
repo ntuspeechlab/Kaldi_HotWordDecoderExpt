@@ -1,0 +1,54 @@
+hypFile= ./exp/Exp5/Output/WER_dual
+WER DualDecoder ResultWER-Type=_WordONLY.txt
+%WER 24.07 [ 2651 / 11014, 448 ins, 231 del, 1972 sub ]
+%SER 72.87 [ 857 / 1176 ]
+Scored 1176 sentences, 0 not present in hyp.
+
+WER DualDecoder ResultWER-Type=_WordAndHotWordLabel.txt
+%WER 30.02 [ 2396 / 7981, 731 ins, 278 del, 1387 sub ]
+%SER 71.43 [ 840 / 1176 ]
+Scored 1176 sentences, 0 not present in hyp.
+
+WER DualDecoder ResultWER-Type=_HOTWordONLY.txt
+%WER 29.78 [ 635 / 2132, 172 ins, 263 del, 200 sub ]
+%SER 43.28 [ 509 / 1176 ]
+Scored 1176 sentences, 0 not present in hyp.
+
+===========================================
+
+hypFile= ./exp/Exp5/Output/WER_master
+WER MasterDecoder ResultWER-Type=_WordONLY.txt
+%WER 41.63 [ 4585 / 11014, 476 ins, 489 del, 3620 sub ]
+%SER 87.16 [ 1025 / 1176 ]
+Scored 1176 sentences, 0 not present in hyp.
+
+WER MasterDecoder ResultWER-Type=_WordAndHotWordLabel.txt
+%WER 53.40 [ 4262 / 7981, 2004 ins, 121 del, 2137 sub ]
+%SER 87.16 [ 1025 / 1176 ]
+Scored 1176 sentences, 0 not present in hyp.
+
+WER MasterDecoder ResultWER-Type=_HOTWordONLY.txt
+%WER 62.99 [ 1343 / 2132, 2 ins, 1280 del, 61 sub ]
+%SER 71.17 [ 837 / 1176 ]
+Scored 1176 sentences, 0 not present in hyp.
+
+===========================================
+
+hypFile= ./exp/Exp5/Output/WER_hotword
+WER HotWordDecoder ResultWER-Type=_WordONLY.txt
+%WER 36.73 [ 4042 / 11004, 555 ins, 705 del, 2782 sub ] [PARTIAL]
+%SER 87.83 [ 1032 / 1175 ]
+Scored 1175 sentences, 1 not present in hyp.
+
+WER HotWordDecoder ResultWER-Type=_WordAndHotWordLabel.txt
+%WER 46.91 [ 3740 / 7972, 825 ins, 685 del, 2230 sub ] [PARTIAL]
+%SER 86.98 [ 1022 / 1175 ]
+Scored 1175 sentences, 1 not present in hyp.
+
+WER HotWordDecoder ResultWER-Type=_HOTWordONLY.txt
+%WER 31.72 [ 676 / 2131, 167 ins, 297 del, 212 sub ] [PARTIAL]
+%SER 45.70 [ 537 / 1175 ]
+Scored 1175 sentences, 1 not present in hyp.
+
+===========================================
+

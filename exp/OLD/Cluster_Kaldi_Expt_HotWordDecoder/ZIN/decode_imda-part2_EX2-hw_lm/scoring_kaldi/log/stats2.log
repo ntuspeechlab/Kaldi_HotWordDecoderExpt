@@ -1,0 +1,6 @@
+# cat /home3/ztkyaw/w2021/deliverables/contrast-zin-dev/baseline/tdnnf-transfer-sp/decode_imda-part2_1629889191-hw_lmg/scoring_kaldi/wer_details/per_utt | utils/scoring/wer_ops_details.pl --special-symbol '***' | sort -b -i -k 1,1 -k 4,4rn -k 2,2 -k 3,3 > /home3/ztkyaw/w2021/deliverables/contrast-zin-dev/baseline/tdnnf-transfer-sp/decode_imda-part2_1629889191-hw_lmg/scoring_kaldi/wer_details/ops 
+# Invoked at Wed Aug 25 19:19:18 +08 2021 from node02
+#
+# Started at Wed Aug 25 19:20:17 SGT 2021 on node03
+utils/scoring/wer_ops_details.pl: Note: handling as utf-8 text
+# Ended (code 0) at Wed Aug 25 19:20:17 +08 2021, elapsed time 59 seconds
