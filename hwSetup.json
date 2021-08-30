@@ -43,8 +43,8 @@
      
   "HWLG_fromMaster":{
                   "select_SqrtUnigramCount":1,
-                  "useTopN_MasterWord":10000,
-                  "threshold_N_forCountHotWord":1500
+                  "useTopN_MasterWord":5000,
+                  "threshold_N_forCountHotWord":4000
                  },
      
   "HWLG_fromBPE":{
