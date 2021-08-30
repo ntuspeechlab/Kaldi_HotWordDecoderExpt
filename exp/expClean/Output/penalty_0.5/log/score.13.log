@@ -1,5 +1,5 @@
-# cat /home3/ztkyaw/w2021/deliverables/contrast-zin-dev/baseline/tdnnf-transfer-sp/decode_imda-part2_1629943701-hw_lmg/scoring_kaldi/penalty_0.5/13.txt | compute-wer --text --mode=present ark:/home3/ztkyaw/w2021/deliverables/contrast-zin-dev/baseline/tdnnf-transfer-sp/decode_imda-part2_1629943701-hw_lmg/scoring_kaldi/test_filt.txt ark,p:- >& /home3/ztkyaw/w2021/deliverables/contrast-zin-dev/baseline/tdnnf-transfer-sp/decode_imda-part2_1629943701-hw_lmg/wer_13_0.5 
-# Invoked at Thu Aug 26 10:20:26 SGT 2021 from node05
+# cat /home3/yachao001/home/asr/w2021/offline-hotwords-asr-test-v2-bak-bak-ASR-4/exp/msf-scdf-cs-june2021-prune/tdnnf-biased/decode-data-hotword/scoring_kaldi/penalty_0.5/13.txt | compute-wer --text --mode=present ark:/home3/yachao001/home/asr/w2021/offline-hotwords-asr-test-v2-bak-bak-ASR-4/exp/msf-scdf-cs-june2021-prune/tdnnf-biased/decode-data-hotword/scoring_kaldi/test_filt.txt ark,p:- >& /home3/yachao001/home/asr/w2021/offline-hotwords-asr-test-v2-bak-bak-ASR-4/exp/msf-scdf-cs-june2021-prune/tdnnf-biased/decode-data-hotword/wer_13_0.5 
+# Started at Fri Aug 27 13:58:21 +08 2021
 #
-# Started at Thu Aug 26 10:20:35 +08 2021 on node02
-# Ended (code 0) at Thu Aug 26 10:20:35 SGT 2021, elapsed time 9 seconds
+# Accounting: time=0 threads=1
+# Ended (code 0) at Fri Aug 27 13:58:21 +08 2021, elapsed time 0 seconds

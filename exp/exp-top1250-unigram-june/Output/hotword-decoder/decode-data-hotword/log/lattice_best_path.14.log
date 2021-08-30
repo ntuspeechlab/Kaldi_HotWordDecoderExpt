@@ -1,0 +1,68 @@
+# lattice-depth-per-frame "ark:gunzip -c /home3/yachao001/home/asr/w2021/offline-hotwords-asr-test-v2-bak-bak-ASR-4/exp/msf-scdf-cs-june2021-prune/tdnnf-biased/decode-data-hotword/lat.14.gz|" "ark,t:|gzip -c > /home3/yachao001/home/asr/w2021/offline-hotwords-asr-test-v2-bak-bak-ASR-4/exp/msf-scdf-cs-june2021-prune/tdnnf-biased/decode-data-hotword/depth_tmp.14.gz" ark:- | lattice-best-path --acoustic-scale=0.1 ark:- ark:/dev/null "ark,t:|gzip -c >/home3/yachao001/home/asr/w2021/offline-hotwords-asr-test-v2-bak-bak-ASR-4/exp/msf-scdf-cs-june2021-prune/tdnnf-biased/decode-data-hotword/ali_tmp.14.gz" 
+# Started at Fri Aug 27 13:58:13 +08 2021
+#
+lattice-depth-per-frame 'ark:gunzip -c /home3/yachao001/home/asr/w2021/offline-hotwords-asr-test-v2-bak-bak-ASR-4/exp/msf-scdf-cs-june2021-prune/tdnnf-biased/decode-data-hotword/lat.14.gz|' 'ark,t:|gzip -c > /home3/yachao001/home/asr/w2021/offline-hotwords-asr-test-v2-bak-bak-ASR-4/exp/msf-scdf-cs-june2021-prune/tdnnf-biased/decode-data-hotword/depth_tmp.14.gz' ark:- 
+lattice-best-path --acoustic-scale=0.1 ark:- ark:/dev/null 'ark,t:|gzip -c >/home3/yachao001/home/asr/w2021/offline-hotwords-asr-test-v2-bak-bak-ASR-4/exp/msf-scdf-cs-june2021-prune/tdnnf-biased/decode-data-hotword/ali_tmp.14.gz' 
+LOG (lattice-best-path[5.5.671~1-e5a5a]:main():lattice-best-path.cc:99) For utterance nsc-part2-chn0-spk09913080mam-030800029, best cost 114.864 + -405.067 = -290.203 over 160 frames.
+LOG (lattice-best-path[5.5.671~1-e5a5a]:main():lattice-best-path.cc:99) For utterance nsc-part2-chn0-spk09913080mam-030800102, best cost 82.4348 + -347.385 = -264.95 over 128 frames.
+LOG (lattice-best-path[5.5.671~1-e5a5a]:main():lattice-best-path.cc:99) For utterance nsc-part2-chn0-spk09913080mam-030800111, best cost 92.4373 + -462.202 = -369.765 over 195 frames.
+LOG (lattice-best-path[5.5.671~1-e5a5a]:main():lattice-best-path.cc:99) For utterance nsc-part2-chn0-spk09913080mam-030800175, best cost 114.423 + -400.203 = -285.781 over 151 frames.
+LOG (lattice-best-path[5.5.671~1-e5a5a]:main():lattice-best-path.cc:99) For utterance nsc-part2-chn0-spk09913080mam-030800197, best cost 81.8248 + -373.753 = -291.928 over 158 frames.
+LOG (lattice-best-path[5.5.671~1-e5a5a]:main():lattice-best-path.cc:99) For utterance nsc-part2-chn0-spk09913080mam-030800204, best cost 87.4591 + -345.587 = -258.127 over 132 frames.
+LOG (lattice-best-path[5.5.671~1-e5a5a]:main():lattice-best-path.cc:99) For utterance nsc-part2-chn0-spk09913080mam-030800251, best cost 101.42 + -556.544 = -455.125 over 278 frames.
+LOG (lattice-best-path[5.5.671~1-e5a5a]:main():lattice-best-path.cc:99) For utterance nsc-part2-chn0-spk09913080mam-030800308, best cost 66.9722 + -457.931 = -390.959 over 204 frames.
+LOG (lattice-best-path[5.5.671~1-e5a5a]:main():lattice-best-path.cc:99) For utterance nsc-part2-chn0-spk09913080mam-030800312, best cost 59.3284 + -398.468 = -339.139 over 171 frames.
+LOG (lattice-best-path[5.5.671~1-e5a5a]:main():lattice-best-path.cc:99) For utterance nsc-part2-chn0-spk09913080mam-030800400, best cost 98.7468 + -384.26 = -285.513 over 149 frames.
+LOG (lattice-best-path[5.5.671~1-e5a5a]:main():lattice-best-path.cc:99) For utterance nsc-part2-chn0-spk09913080mam-030800412, best cost 59.3551 + -250.396 = -191.041 over 110 frames.
+LOG (lattice-best-path[5.5.671~1-e5a5a]:main():lattice-best-path.cc:99) For utterance nsc-part2-chn0-spk09913080mam-030801497, best cost 63.3482 + -398.747 = -335.399 over 158 frames.
+LOG (lattice-best-path[5.5.671~1-e5a5a]:main():lattice-best-path.cc:99) For utterance nsc-part2-chn0-spk09913080mam-030801698, best cost 74.1555 + -315.21 = -241.055 over 129 frames.
+LOG (lattice-best-path[5.5.671~1-e5a5a]:main():lattice-best-path.cc:99) For utterance nsc-part2-chn0-spk09913080mam-030801847, best cost 56.5675 + -317.625 = -261.058 over 131 frames.
+LOG (lattice-best-path[5.5.671~1-e5a5a]:main():lattice-best-path.cc:99) For utterance nsc-part2-chn0-spk09913080mam-030801893, best cost 83.7426 + -377.562 = -293.82 over 164 frames.
+LOG (lattice-best-path[5.5.671~1-e5a5a]:main():lattice-best-path.cc:99) For utterance nsc-part2-chn0-spk09933109inm-031090080, best cost 76.9991 + -440.255 = -363.256 over 181 frames.
+LOG (lattice-best-path[5.5.671~1-e5a5a]:main():lattice-best-path.cc:99) For utterance nsc-part2-chn0-spk09933109inm-031090117, best cost 83.1047 + -317.888 = -234.783 over 129 frames.
+LOG (lattice-best-path[5.5.671~1-e5a5a]:main():lattice-best-path.cc:99) For utterance nsc-part2-chn0-spk09933109inm-031090120, best cost 23.8813 + -162.658 = -138.777 over 72 frames.
+LOG (lattice-best-path[5.5.671~1-e5a5a]:main():lattice-best-path.cc:99) For utterance nsc-part2-chn0-spk09933109inm-031090149, best cost 97.6978 + -423.514 = -325.816 over 158 frames.
+LOG (lattice-best-path[5.5.671~1-e5a5a]:main():lattice-best-path.cc:99) For utterance nsc-part2-chn0-spk09933109inm-031090173, best cost 84.9911 + -493.578 = -408.587 over 191 frames.
+LOG (lattice-best-path[5.5.671~1-e5a5a]:main():lattice-best-path.cc:99) For utterance nsc-part2-chn0-spk09933109inm-031090185, best cost 68.446 + -413.734 = -345.288 over 197 frames.
+LOG (lattice-best-path[5.5.671~1-e5a5a]:main():lattice-best-path.cc:99) For utterance nsc-part2-chn0-spk09933109inm-031090242, best cost 55.1237 + -377.368 = -322.244 over 154 frames.
+LOG (lattice-best-path[5.5.671~1-e5a5a]:main():lattice-best-path.cc:99) For utterance nsc-part2-chn0-spk09933109inm-031090273, best cost 83.1478 + -339.763 = -256.616 over 124 frames.
+LOG (lattice-best-path[5.5.671~1-e5a5a]:main():lattice-best-path.cc:99) For utterance nsc-part2-chn0-spk09933109inm-031090302, best cost 58.3825 + -475.409 = -417.027 over 201 frames.
+LOG (lattice-best-path[5.5.671~1-e5a5a]:main():lattice-best-path.cc:99) For utterance nsc-part2-chn0-spk09933109inm-031090313, best cost 87.5259 + -547.233 = -459.707 over 208 frames.
+LOG (lattice-best-path[5.5.671~1-e5a5a]:main():lattice-best-path.cc:99) For utterance nsc-part2-chn0-spk09933109inm-031091505, best cost 89.4636 + -418.382 = -328.918 over 151 frames.
+LOG (lattice-best-path[5.5.671~1-e5a5a]:main():lattice-best-path.cc:99) For utterance nsc-part2-chn0-spk09933109inm-031091535, best cost 77.383 + -481.626 = -404.243 over 223 frames.
+LOG (lattice-best-path[5.5.671~1-e5a5a]:main():lattice-best-path.cc:99) For utterance nsc-part2-chn0-spk09933109inm-031091584, best cost 79.0841 + -542.802 = -463.718 over 225 frames.
+LOG (lattice-best-path[5.5.671~1-e5a5a]:main():lattice-best-path.cc:99) For utterance nsc-part2-chn0-spk09933109inm-031091624, best cost 131.214 + -677.935 = -546.721 over 286 frames.
+LOG (lattice-best-path[5.5.671~1-e5a5a]:main():lattice-best-path.cc:99) For utterance nsc-part2-chn0-spk09933109inm-031091882, best cost 99.7764 + -571.784 = -472.008 over 229 frames.
+LOG (lattice-best-path[5.5.671~1-e5a5a]:main():lattice-best-path.cc:99) For utterance nsc-part2-chn0-spk09943084maf-030840045, best cost 72.7172 + -326.738 = -254.021 over 121 frames.
+LOG (lattice-best-path[5.5.671~1-e5a5a]:main():lattice-best-path.cc:99) For utterance nsc-part2-chn0-spk09943084maf-030840080, best cost 69.4021 + -358.004 = -288.602 over 151 frames.
+LOG (lattice-best-path[5.5.671~1-e5a5a]:main():lattice-best-path.cc:99) For utterance nsc-part2-chn0-spk09943084maf-030840123, best cost 76.6407 + -470.427 = -393.787 over 180 frames.
+LOG (lattice-best-path[5.5.671~1-e5a5a]:main():lattice-best-path.cc:99) For utterance nsc-part2-chn0-spk09943084maf-030840175, best cost 77.2365 + -376.246 = -299.009 over 131 frames.
+LOG (lattice-best-path[5.5.671~1-e5a5a]:main():lattice-best-path.cc:99) For utterance nsc-part2-chn0-spk09943084maf-030840299, best cost 93.0777 + -408.206 = -315.129 over 158 frames.
+LOG (lattice-best-path[5.5.671~1-e5a5a]:main():lattice-best-path.cc:99) For utterance nsc-part2-chn0-spk09943084maf-030840313, best cost 55.193 + -377.912 = -322.719 over 155 frames.
+LOG (lattice-best-path[5.5.671~1-e5a5a]:main():lattice-best-path.cc:99) For utterance nsc-part2-chn0-spk09943084maf-030840384, best cost 92.4236 + -524.095 = -431.671 over 197 frames.
+LOG (lattice-best-path[5.5.671~1-e5a5a]:main():lattice-best-path.cc:99) For utterance nsc-part2-chn0-spk09943084maf-030840415, best cost 102.546 + -521.104 = -418.558 over 180 frames.
+LOG (lattice-best-path[5.5.671~1-e5a5a]:main():lattice-best-path.cc:99) For utterance nsc-part2-chn0-spk09943084maf-030840433, best cost 155.601 + -702.959 = -547.358 over 263 frames.
+LOG (lattice-best-path[5.5.671~1-e5a5a]:main():lattice-best-path.cc:99) For utterance nsc-part2-chn0-spk09943084maf-030841584, best cost 94.1261 + -560.953 = -466.826 over 222 frames.
+LOG (lattice-best-path[5.5.671~1-e5a5a]:main():lattice-best-path.cc:99) For utterance nsc-part2-chn0-spk09943084maf-030841624, best cost 99.9484 + -535.718 = -435.77 over 221 frames.
+LOG (lattice-best-path[5.5.671~1-e5a5a]:main():lattice-best-path.cc:99) For utterance nsc-part2-chn0-spk09943084maf-030841650, best cost 60.8532 + -277.894 = -217.041 over 106 frames.
+LOG (lattice-best-path[5.5.671~1-e5a5a]:main():lattice-best-path.cc:99) For utterance nsc-part2-chn0-spk09943084maf-030841794, best cost 72.6477 + -336.068 = -263.421 over 125 frames.
+LOG (lattice-best-path[5.5.671~1-e5a5a]:main():lattice-best-path.cc:99) For utterance nsc-part2-chn0-spk09943084maf-030841871, best cost 75.117 + -357.699 = -282.582 over 148 frames.
+LOG (lattice-best-path[5.5.671~1-e5a5a]:main():lattice-best-path.cc:99) For utterance nsc-part2-chn0-spk09963086mam-030860007, best cost 85.2669 + -316.771 = -231.505 over 126 frames.
+LOG (lattice-best-path[5.5.671~1-e5a5a]:main():lattice-best-path.cc:99) For utterance nsc-part2-chn0-spk09963086mam-030860024, best cost 83.1825 + -451.246 = -368.064 over 192 frames.
+LOG (lattice-best-path[5.5.671~1-e5a5a]:main():lattice-best-path.cc:99) For utterance nsc-part2-chn0-spk09963086mam-030860045, best cost 72.2262 + -264.783 = -192.557 over 107 frames.
+LOG (lattice-best-path[5.5.671~1-e5a5a]:main():lattice-best-path.cc:99) For utterance nsc-part2-chn0-spk09963086mam-030860060, best cost 89.2771 + -267.831 = -178.554 over 103 frames.
+LOG (lattice-best-path[5.5.671~1-e5a5a]:main():lattice-best-path.cc:99) For utterance nsc-part2-chn0-spk09963086mam-030860071, best cost 61.193 + -275.066 = -213.873 over 109 frames.
+LOG (lattice-best-path[5.5.671~1-e5a5a]:main():lattice-best-path.cc:99) For utterance nsc-part2-chn0-spk09963086mam-030860091, best cost 78.4136 + -275.261 = -196.848 over 116 frames.
+LOG (lattice-best-path[5.5.671~1-e5a5a]:main():lattice-best-path.cc:99) For utterance nsc-part2-chn0-spk09963086mam-030860173, best cost 52.2808 + -306.638 = -254.358 over 113 frames.
+LOG (lattice-best-path[5.5.671~1-e5a5a]:main():lattice-best-path.cc:99) For utterance nsc-part2-chn0-spk09963086mam-030860302, best cost 71.5879 + -365.131 = -293.543 over 137 frames.
+LOG (lattice-best-path[5.5.671~1-e5a5a]:main():lattice-best-path.cc:99) For utterance nsc-part2-chn0-spk09963086mam-030860350, best cost 93.0616 + -346.262 = -253.201 over 135 frames.
+LOG (lattice-best-path[5.5.671~1-e5a5a]:main():lattice-best-path.cc:99) For utterance nsc-part2-chn0-spk09963086mam-030861535, best cost 75.5102 + -372.713 = -297.203 over 163 frames.
+LOG (lattice-best-path[5.5.671~1-e5a5a]:main():lattice-best-path.cc:99) For utterance nsc-part2-chn0-spk09963086mam-030861547, best cost 102.92 + -451.376 = -348.456 over 164 frames.
+LOG (lattice-best-path[5.5.671~1-e5a5a]:main():lattice-best-path.cc:99) For utterance nsc-part2-chn0-spk09963086mam-030861559, best cost 96.0553 + -414.453 = -318.398 over 157 frames.
+LOG (lattice-best-path[5.5.671~1-e5a5a]:main():lattice-best-path.cc:99) For utterance nsc-part2-chn0-spk09963086mam-030861756, best cost 100.915 + -431.291 = -330.376 over 169 frames.
+LOG (lattice-best-path[5.5.671~1-e5a5a]:main():lattice-best-path.cc:99) For utterance nsc-part2-chn0-spk09963086mam-030861871, best cost 66.5221 + -254.733 = -188.211 over 111 frames.
+LOG (lattice-depth-per-frame[5.5.671~1-e5a5a]:main():lattice-depth-per-frame.cc:82) Done 58 lattices.
+LOG (lattice-best-path[5.5.671~1-e5a5a]:main():lattice-best-path.cc:124) Overall cost per frame is -1.98184 = 0.505926 [graph] + -2.48777 [acoustic] over 9407 frames.
+LOG (lattice-best-path[5.5.671~1-e5a5a]:main():lattice-best-path.cc:128) Done 58 lattices, failed for 0
+# Accounting: time=0 threads=1
+# Ended (code 0) at Fri Aug 27 13:58:13 +08 2021, elapsed time 0 seconds

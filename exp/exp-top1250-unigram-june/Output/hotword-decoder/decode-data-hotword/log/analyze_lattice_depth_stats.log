@@ -1,0 +1,51 @@
+# gunzip -c /home3/yachao001/home/asr/w2021/offline-hotwords-asr-test-v2-bak-bak-ASR-4/exp/msf-scdf-cs-june2021-prune/tdnnf-biased/decode-data-hotword/depth_tmp.*.gz | steps/diagnostic/analyze_lattice_depth_stats.py exp/ExpX/Output/hotword-decoder/graph_hotword /home3/yachao001/home/asr/w2021/offline-hotwords-asr-test-v2-bak-bak-ASR-4/exp/msf-scdf-cs-june2021-prune/tdnnf-biased/decode-data-hotword/ali_frame_tmp.gz 
+# Started at Fri Aug 27 13:58:14 +08 2021
+#
+The total amount of data analyzed assuming 100 frames per second is 0.5 hours
+Overall, lattice depth (10,50,90-percentile)=(1,9,99) and mean=40.7
+Nonsilence phones as a group account for 73.4% of frames, with lattice depth (10,50,90-percentile)=(1,10,104) and mean=42.2
+Phone SIL accounts for 26.6% of frames, with lattice depth (10,50,90-percentile)=(1,7,86) and mean=36.3
+Phone a_eng_I accounts for 5.7% of frames, with lattice depth (10,50,90-percentile)=(1,8,89) and mean=37.8
+Phone n_eng_I accounts for 5.2% of frames, with lattice depth (10,50,90-percentile)=(1,8,75) and mean=30.3
+Phone o_eng_I accounts for 4.4% of frames, with lattice depth (10,50,90-percentile)=(1,7,84) and mean=36.0
+Phone e_eng_I accounts for 3.7% of frames, with lattice depth (10,50,90-percentile)=(1,8,105) and mean=42.3
+Phone i_eng_I accounts for 3.3% of frames, with lattice depth (10,50,90-percentile)=(1,7,90) and mean=39.6
+Phone r_eng_I accounts for 3.3% of frames, with lattice depth (10,50,90-percentile)=(1,5,86) and mean=35.4
+Phone e_WB_eng_E accounts for 2.4% of frames, with lattice depth (10,50,90-percentile)=(2,9,99) and mean=40.3
+Phone t_eng_I accounts for 2.4% of frames, with lattice depth (10,50,90-percentile)=(1,7,90) and mean=38.7
+Phone s_eng_I accounts for 2.1% of frames, with lattice depth (10,50,90-percentile)=(1,6,93) and mean=38.0
+Phone u_eng_I accounts for 2.0% of frames, with lattice depth (10,50,90-percentile)=(1,8,96) and mean=36.6
+Phone l_eng_I accounts for 2.0% of frames, with lattice depth (10,50,90-percentile)=(1,8,102) and mean=39.6
+Phone a_WB_eng_B accounts for 1.8% of frames, with lattice depth (10,50,90-percentile)=(6,18,103) and mean=48.7
+Phone s_WB_eng_B accounts for 1.7% of frames, with lattice depth (10,50,90-percentile)=(1,15,128) and mean=50.7
+Phone m_eng_I accounts for 1.6% of frames, with lattice depth (10,50,90-percentile)=(1,7,86) and mean=34.3
+Phone c_eng_I accounts for 1.5% of frames, with lattice depth (10,50,90-percentile)=(1,4,66) and mean=27.3
+Phone d_WB_eng_E accounts for 1.3% of frames, with lattice depth (10,50,90-percentile)=(2,15,99) and mean=40.1
+Phone t_WB_eng_E accounts for 1.3% of frames, with lattice depth (10,50,90-percentile)=(1,13,125) and mean=45.9
+Phone p_eng_I accounts for 1.3% of frames, with lattice depth (10,50,90-percentile)=(1,6,65) and mean=27.5
+Phone y_WB_eng_E accounts for 1.3% of frames, with lattice depth (10,50,90-percentile)=(2,18,131) and mean=57.4
+Phone h_eng_I accounts for 1.2% of frames, with lattice depth (10,50,90-percentile)=(1,5,80) and mean=32.2
+Phone n_WB_eng_E accounts for 1.2% of frames, with lattice depth (10,50,90-percentile)=(1,18,167) and mean=63.4
+Phone k_eng_I accounts for 1.1% of frames, with lattice depth (10,50,90-percentile)=(1,6,63) and mean=27.9
+Phone t_WB_eng_B accounts for 1.0% of frames, with lattice depth (10,50,90-percentile)=(4,23,169) and mean=68.6
+Phone g_eng_I accounts for 0.9% of frames, with lattice depth (10,50,90-percentile)=(1,4,81) and mean=30.6
+Phone b_eng_I accounts for 0.9% of frames, with lattice depth (10,50,90-percentile)=(1,5,63) and mean=25.2
+Phone c_WB_eng_B accounts for 0.9% of frames, with lattice depth (10,50,90-percentile)=(1,17,137) and mean=51.4
+Phone l_WB_eng_E accounts for 0.9% of frames, with lattice depth (10,50,90-percentile)=(1,6,92) and mean=48.0
+Phone r_WB_eng_E accounts for 0.8% of frames, with lattice depth (10,50,90-percentile)=(3,20,128) and mean=54.9
+Phone g_WB_eng_E accounts for 0.7% of frames, with lattice depth (10,50,90-percentile)=(1,10,111) and mean=41.3
+Phone b_WB_eng_B accounts for 0.7% of frames, with lattice depth (10,50,90-percentile)=(2,16,121) and mean=44.8
+Phone v_eng_I accounts for 0.7% of frames, with lattice depth (10,50,90-percentile)=(1,5,90) and mean=44.0
+Phone w_eng_I accounts for 0.7% of frames, with lattice depth (10,50,90-percentile)=(1,7,79) and mean=30.3
+Phone a_WB_eng_E accounts for 0.7% of frames, with lattice depth (10,50,90-percentile)=(1,9,190) and mean=67.0
+Phone d_eng_I accounts for 0.6% of frames, with lattice depth (10,50,90-percentile)=(1,6,110) and mean=42.3
+Phone o_WB_eng_E accounts for 0.6% of frames, with lattice depth (10,50,90-percentile)=(5,16,134) and mean=52.3
+Phone s_WB_eng_E accounts for 0.6% of frames, with lattice depth (10,50,90-percentile)=(2,21,153) and mean=57.7
+Phone k_WB_eng_E accounts for 0.6% of frames, with lattice depth (10,50,90-percentile)=(1,5,74) and mean=32.0
+Phone w_WB_eng_B accounts for 0.6% of frames, with lattice depth (10,50,90-percentile)=(3,26,149) and mean=61.4
+Phone p_WB_eng_B accounts for 0.6% of frames, with lattice depth (10,50,90-percentile)=(2,15,102) and mean=45.5
+Phone m_WB_eng_B accounts for 0.6% of frames, with lattice depth (10,50,90-percentile)=(2,26,139) and mean=60.2
+Phone f_WB_eng_B accounts for 0.5% of frames, with lattice depth (10,50,90-percentile)=(3,19,99) and mean=40.6
+Phone h_WB_eng_B accounts for 0.5% of frames, with lattice depth (10,50,90-percentile)=(1,9,73) and mean=29.2
+# Accounting: time=1 threads=1
+# Ended (code 0) at Fri Aug 27 13:58:15 +08 2021, elapsed time 1 seconds

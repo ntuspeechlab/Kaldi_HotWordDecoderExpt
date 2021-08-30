@@ -1,0 +1,136 @@
+# nnet3-latgen-faster --online-ivectors=scp:/home3/yachao001/home/asr/w2021/offline-hotwords-asr-test-v2-bak-bak-ASR-4/data/ivector-data-imda-part2/ivector_online.scp --online-ivector-period=10 --frame-subsampling-factor=3 --frames-per-chunk=50 --extra-left-context=0 --extra-right-context=0 --extra-left-context-initial=-1 --extra-right-context-final=-1 --minimize=false --max-active=7000 --min-active=200 --beam=15.0 --lattice-beam=8.0 --acoustic-scale=1.0 --allow-partial=true --word-symbol-table=/home3/yachao001/home/asr/w2021/offline-hotwords-asr-test-v2-bak-bak-ASR-4/exp/msf-scdf-cs-june2021-prune/tdnnf-biased/graph_msf_mix_prune/words.txt /home3/yachao001/home/asr/w2021/offline-hotwords-asr-test-v2-bak-bak-ASR-4/exp/msf-scdf-cs-june2021-prune/tdnnf-biased/final.mdl /home3/yachao001/home/asr/w2021/offline-hotwords-asr-test-v2-bak-bak-ASR-4/exp/msf-scdf-cs-june2021-prune/tdnnf-biased/graph_msf_mix_prune/HCLG.fst "ark,s,cs:apply-cmvn --norm-means=false --norm-vars=false --utt2spk=ark:/home3/yachao001/home/asr/w2021/hotword/data/imda-part2/mfcc-hires/split20/11/utt2spk scp:/home3/yachao001/home/asr/w2021/hotword/data/imda-part2/mfcc-hires/split20/11/cmvn.scp scp:/home3/yachao001/home/asr/w2021/hotword/data/imda-part2/mfcc-hires/split20/11/feats.scp ark:- |" "ark:|lattice-scale --acoustic-scale=10.0 ark:- ark:- | gzip -c >/home3/yachao001/home/asr/w2021/offline-hotwords-asr-test-v2-bak-bak-ASR-4/exp/msf-scdf-cs-june2021-prune/tdnnf-biased/decode-data-master/lat.11.gz" 
+# Started at Fri Aug 27 13:56:05 +08 2021
+#
+nnet3-latgen-faster --online-ivectors=scp:/home3/yachao001/home/asr/w2021/offline-hotwords-asr-test-v2-bak-bak-ASR-4/data/ivector-data-imda-part2/ivector_online.scp --online-ivector-period=10 --frame-subsampling-factor=3 --frames-per-chunk=50 --extra-left-context=0 --extra-right-context=0 --extra-left-context-initial=-1 --extra-right-context-final=-1 --minimize=false --max-active=7000 --min-active=200 --beam=15.0 --lattice-beam=8.0 --acoustic-scale=1.0 --allow-partial=true --word-symbol-table=/home3/yachao001/home/asr/w2021/offline-hotwords-asr-test-v2-bak-bak-ASR-4/exp/msf-scdf-cs-june2021-prune/tdnnf-biased/graph_msf_mix_prune/words.txt /home3/yachao001/home/asr/w2021/offline-hotwords-asr-test-v2-bak-bak-ASR-4/exp/msf-scdf-cs-june2021-prune/tdnnf-biased/final.mdl /home3/yachao001/home/asr/w2021/offline-hotwords-asr-test-v2-bak-bak-ASR-4/exp/msf-scdf-cs-june2021-prune/tdnnf-biased/graph_msf_mix_prune/HCLG.fst 'ark,s,cs:apply-cmvn --norm-means=false --norm-vars=false --utt2spk=ark:/home3/yachao001/home/asr/w2021/hotword/data/imda-part2/mfcc-hires/split20/11/utt2spk scp:/home3/yachao001/home/asr/w2021/hotword/data/imda-part2/mfcc-hires/split20/11/cmvn.scp scp:/home3/yachao001/home/asr/w2021/hotword/data/imda-part2/mfcc-hires/split20/11/feats.scp ark:- |' 'ark:|lattice-scale --acoustic-scale=10.0 ark:- ark:- | gzip -c >/home3/yachao001/home/asr/w2021/offline-hotwords-asr-test-v2-bak-bak-ASR-4/exp/msf-scdf-cs-june2021-prune/tdnnf-biased/decode-data-master/lat.11.gz' 
+LOG (nnet3-latgen-faster[5.5.671~1-e5a5a]:RemoveOrphanNodes():nnet-nnet.cc:948) Removed 1 orphan nodes.
+LOG (nnet3-latgen-faster[5.5.671~1-e5a5a]:RemoveOrphanComponents():nnet-nnet.cc:847) Removing 2 orphan components.
+LOG (nnet3-latgen-faster[5.5.671~1-e5a5a]:Collapse():nnet-utils.cc:1472) Added 1 components, removed 2
+lattice-scale --acoustic-scale=10.0 ark:- ark:- 
+apply-cmvn --norm-means=false --norm-vars=false --utt2spk=ark:/home3/yachao001/home/asr/w2021/hotword/data/imda-part2/mfcc-hires/split20/11/utt2spk scp:/home3/yachao001/home/asr/w2021/hotword/data/imda-part2/mfcc-hires/split20/11/cmvn.scp scp:/home3/yachao001/home/asr/w2021/hotword/data/imda-part2/mfcc-hires/split20/11/feats.scp ark:- 
+LOG (nnet3-latgen-faster[5.5.671~1-e5a5a]:CheckAndFixConfigs():nnet-am-decodable-simple.cc:294) Increasing --frames-per-chunk from 50 to 51 to make it a multiple of --frame-subsampling-factor=3
+nsc-part2-chn0-spk09383051inf-030510049 so hilarious avenue jalan limau nipis and kampung ubi industrial estate 
+LOG (nnet3-latgen-faster[5.5.671~1-e5a5a]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09383051inf-030510049 is 2.02327 over 229 frames.
+nsc-part2-chn0-spk09383051inf-030510060 please tell me how to get to seletar health drive 
+LOG (nnet3-latgen-faster[5.5.671~1-e5a5a]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09383051inf-030510060 is 2.02515 over 140 frames.
+nsc-part2-chn0-spk09383051inf-030510099 seems way geylang-bahru parents and marine parade road 
+LOG (nnet3-latgen-faster[5.5.671~1-e5a5a]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09383051inf-030510099 is 2.15286 over 142 frames.
+nsc-part2-chn0-spk09383051inf-030510134 bedok point australian international school and methodist girls' school 
+LOG (nnet3-latgen-faster[5.5.671~1-e5a5a]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09383051inf-030510134 is 2.51099 over 161 frames.
+nsc-part2-chn0-spk09383051inf-030510181 how far away is ulu sembawang from here 
+LOG (nnet3-latgen-faster[5.5.671~1-e5a5a]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09383051inf-030510181 is 2.27141 over 130 frames.
+nsc-part2-chn0-spk09383051inf-030510196 <unk> i'm i am meeting alexis at marsiling crescent first 
+LOG (nnet3-latgen-faster[5.5.671~1-e5a5a]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09383051inf-030510196 is 2.16221 over 182 frames.
+nsc-part2-chn0-spk09383051inf-030510302 bendemeer secondary school spring hot spring would heights and s m u lee kong 圈 lee kong yan school of business 
+LOG (nnet3-latgen-faster[5.5.671~1-e5a5a]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09383051inf-030510302 is 2.04175 over 343 frames.
+nsc-part2-chn0-spk09383051inf-030510394 dollars the stamford raffles holy holy link and whole scene aljunied 
+LOG (nnet3-latgen-faster[5.5.671~1-e5a5a]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09383051inf-030510394 is 1.96726 over 238 frames.
+nsc-part2-chn0-spk09383051inf-030510410 i'm waiting for plot to come back from bukit batok 
+LOG (nnet3-latgen-faster[5.5.671~1-e5a5a]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09383051inf-030510410 is 2.53819 over 124 frames.
+nsc-part2-chn0-spk09383051inf-030510434 then go to uh cleaning lame and kampung kembangan neighbourhood police post 
+LOG (nnet3-latgen-faster[5.5.671~1-e5a5a]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09383051inf-030510434 is 2.11114 over 234 frames.
+nsc-part2-chn0-spk09383051inf-030511584 阳 光 road growth crescent and b bedok jetty 
+LOG (nnet3-latgen-faster[5.5.671~1-e5a5a]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09383051inf-030511584 is 1.97022 over 168 frames.
+nsc-part2-chn0-spk09383051inf-030511680 please look for creamy when you reach chinatown hotel 
+LOG (nnet3-latgen-faster[5.5.671~1-e5a5a]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09383051inf-030511680 is 2.18628 over 153 frames.
+nsc-part2-chn0-spk09383051inf-030511706 kampung couple road burgundy street and bartley-road 
+LOG (nnet3-latgen-faster[5.5.671~1-e5a5a]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09383051inf-030511706 is 1.96735 over 176 frames.
+nsc-part2-chn0-spk09383051inf-030511716 perahu-road kampung kayu road and jalan mesra 
+LOG (nnet3-latgen-faster[5.5.671~1-e5a5a]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09383051inf-030511716 is 1.94009 over 145 frames.
+nsc-part2-chn0-spk09383051inf-030511804 bukit timah avenue weekly road and angsana drive 
+LOG (nnet3-latgen-faster[5.5.671~1-e5a5a]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09383051inf-030511804 is 2.03201 over 162 frames.
+nsc-part2-chn0-spk09423020mam-030200045 which birth should i take to bedok public library 
+LOG (nnet3-latgen-faster[5.5.671~1-e5a5a]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09423020mam-030200045 is 2.31603 over 117 frames.
+nsc-part2-chn0-spk09423020mam-030200080 one three hill orchard spring lane and close he drive 
+LOG (nnet3-latgen-faster[5.5.671~1-e5a5a]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09423020mam-030200080 is 1.78266 over 182 frames.
+nsc-part2-chn0-spk09423020mam-030200162 <unk> walk taman-jurong shopping centre and omnitheatre 
+LOG (nnet3-latgen-faster[5.5.671~1-e5a5a]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09423020mam-030200162 is 1.99824 over 204 frames.
+nsc-part2-chn0-spk09423020mam-030200173 谁 nicholas view jamaica 肉 and kampung bukit coffee chinese cemetery 
+LOG (nnet3-latgen-faster[5.5.671~1-e5a5a]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09423020mam-030200173 is 1.91637 over 241 frames.
+nsc-part2-chn0-spk09423020mam-030200201 show me the way to seletar aerospace 
+LOG (nnet3-latgen-faster[5.5.671~1-e5a5a]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09423020mam-030200201 is 1.80798 over 140 frames.
+nsc-part2-chn0-spk09423020mam-030200221 select the fastest way to sembawang early 
+LOG (nnet3-latgen-faster[5.5.671~1-e5a5a]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09423020mam-030200221 is 2.11178 over 123 frames.
+nsc-part2-chn0-spk09423020mam-030200269 bukit batok nature park jalan tarik lilin and camp then medical sense ah 
+LOG (nnet3-latgen-faster[5.5.671~1-e5a5a]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09423020mam-030200269 is 1.98562 over 224 frames.
+nsc-part2-chn0-spk09423020mam-030200350 so frank student ham husin a junior and loosely dan 
+LOG (nnet3-latgen-faster[5.5.671~1-e5a5a]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09423020mam-030200350 is 1.72499 over 165 frames.
+nsc-part2-chn0-spk09423020mam-030200415 how 三卧 shelford grow and geylang polyclinic and dental clinic 
+LOG (nnet3-latgen-faster[5.5.671~1-e5a5a]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09423020mam-030200415 is 1.79841 over 232 frames.
+nsc-part2-chn0-spk09423020mam-030200427 maple avenue kampong glam constituency sports club and 配音 primary school 
+LOG (nnet3-latgen-faster[5.5.671~1-e5a5a]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09423020mam-030200427 is 2.12311 over 222 frames.
+nsc-part2-chn0-spk09423020mam-030201472 returning road mimosa avail and upper-bukit-timah-road 
+LOG (nnet3-latgen-faster[5.5.671~1-e5a5a]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09423020mam-030201472 is 1.96751 over 167 frames.
+nsc-part2-chn0-spk09423020mam-030201493 which birth should i take to chinatown hotel 
+LOG (nnet3-latgen-faster[5.5.671~1-e5a5a]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09423020mam-030201493 is 2.10634 over 127 frames.
+nsc-part2-chn0-spk09423020mam-030201747 lion road emperor's road and marsiling crescent 
+LOG (nnet3-latgen-faster[5.5.671~1-e5a5a]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09423020mam-030201747 is 1.88727 over 155 frames.
+nsc-part2-chn0-spk09423020mam-030201887 seletar link s_g enable gibraltar crescent 
+LOG (nnet3-latgen-faster[5.5.671~1-e5a5a]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09423020mam-030201887 is 1.77819 over 183 frames.
+nsc-part2-chn0-spk09523043mam-030430013 please tell me how to get to bukit timah post office 
+LOG (nnet3-latgen-faster[5.5.671~1-e5a5a]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09523043mam-030430013 is 2.20047 over 138 frames.
+nsc-part2-chn0-spk09523043mam-030430117 what is the distance to simpang bedok 
+LOG (nnet3-latgen-faster[5.5.671~1-e5a5a]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09523043mam-030430117 is 2.17066 over 98 frames.
+nsc-part2-chn0-spk09523043mam-030430175 er there food courts or restaurant near kampung bugis 
+LOG (nnet3-latgen-faster[5.5.671~1-e5a5a]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09523043mam-030430175 is 2.16384 over 147 frames.
+nsc-part2-chn0-spk09523043mam-030430176 upper arjun it link jalan pelangi and 都 我 
+LOG (nnet3-latgen-faster[5.5.671~1-e5a5a]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09523043mam-030430176 is 1.87203 over 150 frames.
+nsc-part2-chn0-spk09523043mam-030430188 how do i get to upper seletar reservoir 
+LOG (nnet3-latgen-faster[5.5.671~1-e5a5a]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09523043mam-030430188 is 2.08524 over 108 frames.
+nsc-part2-chn0-spk09523043mam-030430193 barang loves roasted crispy spring chicken 
+LOG (nnet3-latgen-faster[5.5.671~1-e5a5a]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09523043mam-030430193 is 2.04567 over 110 frames.
+nsc-part2-chn0-spk09523043mam-030430198 lim chong-pang hang 张家界 an exam 的 lorry johnston 
+LOG (nnet3-latgen-faster[5.5.671~1-e5a5a]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09523043mam-030430198 is 1.71179 over 201 frames.
+nsc-part2-chn0-spk09523043mam-030430296 geylang-bahru lain 
+LOG (nnet3-latgen-faster[5.5.671~1-e5a5a]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09523043mam-030430296 is 2.21163 over 67 frames.
+nsc-part2-chn0-spk09523043mam-030430385 what are the landmarks near bukit batok nature park 
+LOG (nnet3-latgen-faster[5.5.671~1-e5a5a]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09523043mam-030430385 is 2.41245 over 115 frames.
+nsc-part2-chn0-spk09523043mam-030431462 any a spring and s b s 
+LOG (nnet3-latgen-faster[5.5.671~1-e5a5a]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09523043mam-030431462 is 1.75906 over 147 frames.
+nsc-part2-chn0-spk09523043mam-030431528 sembawang animal quarantine station park twenty two hotel at lorong pendek 
+LOG (nnet3-latgen-faster[5.5.671~1-e5a5a]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09523043mam-030431528 is 2.04923 over 237 frames.
+nsc-part2-chn0-spk09523043mam-030431699 download street jalan langgar bedok and singapore zoo 
+LOG (nnet3-latgen-faster[5.5.671~1-e5a5a]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09523043mam-030431699 is 2.12424 over 144 frames.
+nsc-part2-chn0-spk09523043mam-030431717 seletar heels drive jalan tepung and chancery lain 
+LOG (nnet3-latgen-faster[5.5.671~1-e5a5a]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09523043mam-030431717 is 2.03695 over 136 frames.
+nsc-part2-chn0-spk09523043mam-030431721 it's about forty one minutes walk to sembawang early 
+LOG (nnet3-latgen-faster[5.5.671~1-e5a5a]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09523043mam-030431721 is 1.9193 over 113 frames.
+nsc-part2-chn0-spk09523043mam-030431747 chinatown hotel orchard road west and buyung road 
+LOG (nnet3-latgen-faster[5.5.671~1-e5a5a]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09523043mam-030431747 is 2.16686 over 132 frames.
+nsc-part2-chn0-spk09543081cnm-030810032 bukit-batok west avenue mornington crescent and chong pang neighbourhood police post 
+LOG (nnet3-latgen-faster[5.5.671~1-e5a5a]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09543081cnm-030810032 is 1.88654 over 308 frames.
+nsc-part2-chn0-spk09543081cnm-030810066 spring home three six one and ayam brand 
+LOG (nnet3-latgen-faster[5.5.671~1-e5a5a]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09543081cnm-030810066 is 1.68876 over 121 frames.
+nsc-part2-chn0-spk09543081cnm-030810111 sembawang h d b belanja office tang 相 team called temper and simply lots 
+LOG (nnet3-latgen-faster[5.5.671~1-e5a5a]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09543081cnm-030810111 is 1.63747 over 240 frames.
+nsc-part2-chn0-spk09543081cnm-030810136 murder point tanjong-pajar curi and upper-bukit-timah-road 
+LOG (nnet3-latgen-faster[5.5.671~1-e5a5a]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09543081cnm-030810136 is 1.64329 over 174 frames.
+nsc-part2-chn0-spk09543081cnm-030810148 can writing advice to kampung bugis crescent 
+LOG (nnet3-latgen-faster[5.5.671~1-e5a5a]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09543081cnm-030810148 is 1.81131 over 133 frames.
+nsc-part2-chn0-spk09543081cnm-030810149 i'm meeting mah then i truly love first 
+LOG (nnet3-latgen-faster[5.5.671~1-e5a5a]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09543081cnm-030810149 is 1.66817 over 120 frames.
+nsc-part2-chn0-spk09543081cnm-030810219 could you tell me the way to seletar east fanboy 
+LOG (nnet3-latgen-faster[5.5.671~1-e5a5a]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09543081cnm-030810219 is 1.65787 over 157 frames.
+nsc-part2-chn0-spk09543081cnm-030810247 j c academy berani lorong one geylang 
+LOG (nnet3-latgen-faster[5.5.671~1-e5a5a]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09543081cnm-030810247 is 1.7177 over 159 frames.
+nsc-part2-chn0-spk09543081cnm-030810299 <unk> role t one uh private crescent encik arif sembawang 
+LOG (nnet3-latgen-faster[5.5.671~1-e5a5a]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09543081cnm-030810299 is 1.59266 over 195 frames.
+nsc-part2-chn0-spk09543081cnm-030810414 kampong glam 
+LOG (nnet3-latgen-faster[5.5.671~1-e5a5a]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09543081cnm-030810414 is 1.86227 over 66 frames.
+nsc-part2-chn0-spk09543081cnm-030810433 second child b wrote voucher and kampung baru ah 
+LOG (nnet3-latgen-faster[5.5.671~1-e5a5a]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09543081cnm-030810433 is 1.80048 over 132 frames.
+LOG (apply-cmvn[5.5.671~1-e5a5a]:main():apply-cmvn.cc:81) Copied 59 utterances.
+nsc-part2-chn0-spk09543081cnm-030811761 <unk> swasta load and celebrated settle live station nope 
+LOG (nnet3-latgen-faster[5.5.671~1-e5a5a]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09543081cnm-030811761 is 1.50562 over 173 frames.
+nsc-part2-chn0-spk09543081cnm-030811771 <unk> enam atau very lame and kampung couple rock 
+LOG (nnet3-latgen-faster[5.5.671~1-e5a5a]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09543081cnm-030811771 is 1.73088 over 155 frames.
+nsc-part2-chn0-spk09543081cnm-030811785 spring i d a and actors 
+LOG (nnet3-latgen-faster[5.5.671~1-e5a5a]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09543081cnm-030811785 is 1.61835 over 104 frames.
+nsc-part2-chn0-spk09543081cnm-030811849 please tell me how to get to kampung seri 
+LOG (nnet3-latgen-faster[5.5.671~1-e5a5a]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance nsc-part2-chn0-spk09543081cnm-030811849 is 1.97988 over 117 frames.
+LOG (nnet3-latgen-faster[5.5.671~1-e5a5a]:main():nnet3-latgen-faster.cc:256) Time taken 207.08s: real-time factor assuming 100 frames/sec is 0.718578
+LOG (nnet3-latgen-faster[5.5.671~1-e5a5a]:main():nnet3-latgen-faster.cc:259) Done 59 utterances, failed for 0
+LOG (nnet3-latgen-faster[5.5.671~1-e5a5a]:main():nnet3-latgen-faster.cc:261) Overall log-likelihood per frame is 1.95282 over 9606 frames.
+LOG (nnet3-latgen-faster[5.5.671~1-e5a5a]:~CachingOptimizingCompiler():nnet-optimize.cc:710) 0.431 seconds taken in nnet3 compilation total (breakdown: 0.3 compilation, 0.0863 optimization, 0 shortcut expansion, 0.0117 checking, 7.61e-05 computing indexes, 0.0338 misc.) + 0 I/O.
+LOG (lattice-scale[5.5.671~1-e5a5a]:main():lattice-scale.cc:107) Done 59 lattices.
+# Accounting: time=212 threads=1
+# Ended (code 0) at Fri Aug 27 13:59:37 +08 2021, elapsed time 212 seconds

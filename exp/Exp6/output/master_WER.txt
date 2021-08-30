@@ -1,18 +1,18 @@
 WER:./exp/Exp6/output/master
 Type:_HotONLY.txt
-%WER 62.99 [ 1343 / 2132, 2 ins, 1280 del, 61 sub ]
-%SER 71.17 [ 837 / 1176 ]
+%WER 62.95 [ 1342 / 2132, 2 ins, 1280 del, 60 sub ]
+%SER 71.09 [ 836 / 1176 ]
 Scored 1176 sentences, 0 not present in hyp.
 
 WER:./exp/Exp6/output/master
-Type:_HOTAndWord.txt
-%WER 53.40 [ 4262 / 7981, 2004 ins, 121 del, 2137 sub ]
+Type:_HotAndWord.txt
+%WER 53.38 [ 4260 / 7981, 1999 ins, 122 del, 2139 sub ]
 %SER 87.16 [ 1025 / 1176 ]
 Scored 1176 sentences, 0 not present in hyp.
 
 WER:./exp/Exp6/output/master
 Type:_WordONLY.txt
-%WER 41.63 [ 4585 / 11014, 476 ins, 489 del, 3620 sub ]
+%WER 41.66 [ 4588 / 11014, 476 ins, 494 del, 3618 sub ]
 %SER 87.16 [ 1025 / 1176 ]
 Scored 1176 sentences, 0 not present in hyp.
 

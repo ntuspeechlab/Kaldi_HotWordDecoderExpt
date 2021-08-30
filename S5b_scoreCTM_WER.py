@@ -41,12 +41,12 @@ def real_main(ipJsonFileName):
     test_ref_txt = config['TestDir']['test_ref_txt'].replace('$testDir',test_dir)
 
 
-    compute_wer_cmd = config['KaldiDir']['KALDI_ROOT']+'/src/bin/cmpute-wer '
+    compute_wer_cmd = config['KaldiDir']['KALDI_ROOT']+'/src/bin/compute-wer'
 
     # remember that test_ref (although it is a ctm file MUST end with.txt since it has NO word boundary timing)
 
     list_ctm = [dual_ctm, master_ctm, hotword_ctm]
-    typeExtension = ['_HotONLY.txt', '_HOTAndWord.txt', '_WordONLY.txt']
+    typeExtension = ['_HotONLY.txt', '_HotAndWord.txt', '_WordONLY.txt']
     
     refFile  = test_ref_txt[0:len(test_ref_txt)-4]
     for ctm in list_ctm:
@@ -60,7 +60,7 @@ def real_main(ipJsonFileName):
             opStr = compute_wer_cmd+" --text --mode=present ark:"+refFileExt+ \
             " ark:"+hypFileExt+" capture_output=True, text=True"
 
-            result = subprocess.run(["compute-wer", "--text", "--mode=present",
+            result = subprocess.run([compute_wer_cmd, "--text", "--mode=present",
                 "ark:"+refFileExt,"ark:"+hypFileExt], capture_output=True, text=True)
             opStr = "WER:"+hypFile+"\nType:"+ext+"\n"+result.stdout+'\n'
             opWER.write(opStr)

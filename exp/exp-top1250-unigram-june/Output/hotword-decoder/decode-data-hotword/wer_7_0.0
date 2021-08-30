@@ -1,0 +1,4 @@
+compute-wer --text --mode=present ark:/home3/yachao001/home/asr/w2021/offline-hotwords-asr-test-v2-bak-bak-ASR-4/exp/msf-scdf-cs-june2021-prune/tdnnf-biased/decode-data-hotword/scoring_kaldi/test_filt.txt ark,p:- 
+%WER 66.93 [ 7372 / 11014, 508 ins, 2291 del, 4573 sub ]
+%SER 99.83 [ 1174 / 1176 ]
+Scored 1176 sentences, 0 not present in hyp.

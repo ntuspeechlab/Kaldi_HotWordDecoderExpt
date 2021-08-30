@@ -1,66 +1,66 @@
 WER:./exp/Exp6/output/penalty_0.0/7.txt
 Type:_HotONLY.txt
-%WER 42.26 [ 901 / 2132, 103 ins, 543 del, 255 sub ]
-%SER 55.53 [ 653 / 1176 ]
+%WER 28.14 [ 600 / 2132, 70 ins, 418 del, 112 sub ]
+%SER 40.99 [ 482 / 1176 ]
 Scored 1176 sentences, 0 not present in hyp.
 
 WER:./exp/Exp6/output/penalty_0.0/8.txt
 Type:_HotONLY.txt
-%WER 37.90 [ 808 / 2132, 122 ins, 449 del, 237 sub ]
-%SER 51.53 [ 606 / 1176 ]
+%WER 25.00 [ 533 / 2132, 91 ins, 343 del, 99 sub ]
+%SER 37.84 [ 445 / 1176 ]
 Scored 1176 sentences, 0 not present in hyp.
 
 WER:./exp/Exp6/output/penalty_0.0/9.txt
 Type:_HotONLY.txt
-%WER 34.29 [ 731 / 2132, 137 ins, 369 del, 225 sub ]
-%SER 48.04 [ 565 / 1176 ]
+%WER 22.89 [ 488 / 2132, 112 ins, 283 del, 93 sub ]
+%SER 35.63 [ 419 / 1176 ]
 Scored 1176 sentences, 0 not present in hyp.
 
 WER:./exp/Exp6/output/penalty_0.0/10.txt
 Type:_HotONLY.txt
-%WER 31.72 [ 676 / 2131, 167 ins, 297 del, 212 sub ] [PARTIAL]
-%SER 45.70 [ 537 / 1175 ]
-Scored 1175 sentences, 1 not present in hyp.
+%WER 20.83 [ 444 / 2132, 130 ins, 224 del, 90 sub ]
+%SER 32.48 [ 382 / 1176 ]
+Scored 1176 sentences, 0 not present in hyp.
 
 WER:./exp/Exp6/output/penalty_0.0/11.txt
 Type:_HotONLY.txt
-%WER 30.56 [ 651 / 2130, 190 ins, 257 del, 204 sub ] [PARTIAL]
-%SER 43.87 [ 515 / 1174 ]
-Scored 1174 sentences, 2 not present in hyp.
+%WER 19.37 [ 413 / 2132, 133 ins, 191 del, 89 sub ]
+%SER 30.70 [ 361 / 1176 ]
+Scored 1176 sentences, 0 not present in hyp.
 
 WER:./exp/Exp6/output/penalty_0.0/12.txt
 Type:_HotONLY.txt
-%WER 28.64 [ 610 / 2130, 208 ins, 209 del, 193 sub ] [PARTIAL]
-%SER 41.69 [ 489 / 1173 ]
-Scored 1173 sentences, 3 not present in hyp.
+%WER 18.34 [ 391 / 2132, 151 ins, 161 del, 79 sub ]
+%SER 29.59 [ 348 / 1176 ]
+Scored 1176 sentences, 0 not present in hyp.
 
 WER:./exp/Exp6/output/penalty_0.0/13.txt
 Type:_HotONLY.txt
-%WER 28.28 [ 602 / 2129, 235 ins, 187 del, 180 sub ] [PARTIAL]
-%SER 40.53 [ 475 / 1172 ]
-Scored 1172 sentences, 4 not present in hyp.
+%WER 17.26 [ 368 / 2132, 157 ins, 141 del, 70 sub ] [PARTIAL]
+%SER 28.09 [ 330 / 1175 ]
+Scored 1175 sentences, 1 not present in hyp.
 
 WER:./exp/Exp6/output/penalty_0.0/14.txt
 Type:_HotONLY.txt
-%WER 28.65 [ 610 / 2129, 250 ins, 179 del, 181 sub ] [PARTIAL]
-%SER 41.98 [ 492 / 1172 ]
-Scored 1172 sentences, 4 not present in hyp.
+%WER 17.21 [ 367 / 2132, 160 ins, 133 del, 74 sub ] [PARTIAL]
+%SER 27.83 [ 327 / 1175 ]
+Scored 1175 sentences, 1 not present in hyp.
 
 WER:./exp/Exp6/output/penalty_0.0/15.txt
 Type:_HotONLY.txt
-%WER 28.56 [ 608 / 2129, 256 ins, 176 del, 176 sub ] [PARTIAL]
-%SER 41.93 [ 491 / 1171 ]
-Scored 1171 sentences, 5 not present in hyp.
+%WER 16.51 [ 352 / 2132, 160 ins, 123 del, 69 sub ] [PARTIAL]
+%SER 26.64 [ 313 / 1175 ]
+Scored 1175 sentences, 1 not present in hyp.
 
 WER:./exp/Exp6/output/penalty_0.0/16.txt
 Type:_HotONLY.txt
-%WER 28.99 [ 617 / 2128, 267 ins, 178 del, 172 sub ] [PARTIAL]
-%SER 42.77 [ 500 / 1169 ]
-Scored 1169 sentences, 7 not present in hyp.
+%WER 16.60 [ 354 / 2132, 164 ins, 121 del, 69 sub ] [PARTIAL]
+%SER 26.89 [ 316 / 1175 ]
+Scored 1175 sentences, 1 not present in hyp.
 
 WER:./exp/Exp6/output/penalty_0.0/17.txt
 Type:_HotONLY.txt
-%WER 29.56 [ 629 / 2128, 282 ins, 177 del, 170 sub ] [PARTIAL]
-%SER 43.80 [ 512 / 1169 ]
-Scored 1169 sentences, 7 not present in hyp.
+%WER 16.18 [ 345 / 2132, 162 ins, 117 del, 66 sub ] [PARTIAL]
+%SER 26.04 [ 306 / 1175 ]
+Scored 1175 sentences, 1 not present in hyp.
 
