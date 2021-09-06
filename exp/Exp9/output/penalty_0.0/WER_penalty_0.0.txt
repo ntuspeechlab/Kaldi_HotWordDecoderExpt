@@ -1,0 +1,66 @@
+WER:./exp/Exp9/output/penalty_0.0/7.txt
+Type:_HotONLY.txt
+%WER 44.47 [ 948 / 2132, 76 ins, 656 del, 216 sub ]
+%SER 57.48 [ 676 / 1176 ]
+Scored 1176 sentences, 0 not present in hyp.
+
+WER:./exp/Exp9/output/penalty_0.0/8.txt
+Type:_HotONLY.txt
+%WER 40.53 [ 864 / 2132, 88 ins, 571 del, 205 sub ]
+%SER 53.91 [ 634 / 1176 ]
+Scored 1176 sentences, 0 not present in hyp.
+
+WER:./exp/Exp9/output/penalty_0.0/9.txt
+Type:_HotONLY.txt
+%WER 37.24 [ 794 / 2132, 104 ins, 495 del, 195 sub ]
+%SER 51.19 [ 602 / 1176 ]
+Scored 1176 sentences, 0 not present in hyp.
+
+WER:./exp/Exp9/output/penalty_0.0/10.txt
+Type:_HotONLY.txt
+%WER 33.74 [ 719 / 2131, 117 ins, 420 del, 182 sub ] [PARTIAL]
+%SER 48.00 [ 564 / 1175 ]
+Scored 1175 sentences, 1 not present in hyp.
+
+WER:./exp/Exp9/output/penalty_0.0/11.txt
+Type:_HotONLY.txt
+%WER 31.36 [ 668 / 2130, 123 ins, 372 del, 173 sub ] [PARTIAL]
+%SER 45.27 [ 531 / 1173 ]
+Scored 1173 sentences, 3 not present in hyp.
+
+WER:./exp/Exp9/output/penalty_0.0/12.txt
+Type:_HotONLY.txt
+%WER 29.62 [ 631 / 2130, 134 ins, 333 del, 164 sub ] [PARTIAL]
+%SER 43.05 [ 505 / 1173 ]
+Scored 1173 sentences, 3 not present in hyp.
+
+WER:./exp/Exp9/output/penalty_0.0/13.txt
+Type:_HotONLY.txt
+%WER 28.75 [ 612 / 2129, 151 ins, 308 del, 153 sub ] [PARTIAL]
+%SER 42.58 [ 499 / 1172 ]
+Scored 1172 sentences, 4 not present in hyp.
+
+WER:./exp/Exp9/output/penalty_0.0/14.txt
+Type:_HotONLY.txt
+%WER 27.67 [ 588 / 2125, 160 ins, 285 del, 143 sub ] [PARTIAL]
+%SER 41.45 [ 485 / 1170 ]
+Scored 1170 sentences, 6 not present in hyp.
+
+WER:./exp/Exp9/output/penalty_0.0/15.txt
+Type:_HotONLY.txt
+%WER 27.19 [ 577 / 2122, 169 ins, 271 del, 137 sub ] [PARTIAL]
+%SER 40.92 [ 478 / 1168 ]
+Scored 1168 sentences, 8 not present in hyp.
+
+WER:./exp/Exp9/output/penalty_0.0/16.txt
+Type:_HotONLY.txt
+%WER 27.50 [ 583 / 2120, 180 ins, 269 del, 134 sub ] [PARTIAL]
+%SER 41.25 [ 481 / 1166 ]
+Scored 1166 sentences, 10 not present in hyp.
+
+WER:./exp/Exp9/output/penalty_0.0/17.txt
+Type:_HotONLY.txt
+%WER 27.84 [ 590 / 2119, 186 ins, 271 del, 133 sub ] [PARTIAL]
+%SER 41.63 [ 485 / 1165 ]
+Scored 1165 sentences, 11 not present in hyp.
+

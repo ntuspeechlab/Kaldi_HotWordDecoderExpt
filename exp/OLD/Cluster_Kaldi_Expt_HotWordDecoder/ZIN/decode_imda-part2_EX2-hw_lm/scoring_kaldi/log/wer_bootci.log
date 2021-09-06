@@ -1,6 +1,0 @@
-# compute-wer-bootci --mode=present ark:/home3/ztkyaw/w2021/deliverables/contrast-zin-dev/baseline/tdnnf-transfer-sp/decode_imda-part2_1629889191-hw_lmg/scoring_kaldi/test_filt.txt ark:/home3/ztkyaw/w2021/deliverables/contrast-zin-dev/baseline/tdnnf-transfer-sp/decode_imda-part2_1629889191-hw_lmg/scoring_kaldi/penalty_0.0/13.txt > /home3/ztkyaw/w2021/deliverables/contrast-zin-dev/baseline/tdnnf-transfer-sp/decode_imda-part2_1629889191-hw_lmg/scoring_kaldi/wer_details/wer_bootci 
-# Invoked at Wed Aug 25 19:20:17 +08 2021 from node02
-#
-# Started at Wed Aug 25 19:21:16 SGT 2021 on node03
-compute-wer-bootci --mode=present ark:/home3/ztkyaw/w2021/deliverables/contrast-zin-dev/baseline/tdnnf-transfer-sp/decode_imda-part2_1629889191-hw_lmg/scoring_kaldi/test_filt.txt ark:/home3/ztkyaw/w2021/deliverables/contrast-zin-dev/baseline/tdnnf-transfer-sp/decode_imda-part2_1629889191-hw_lmg/scoring_kaldi/penalty_0.0/13.txt 
-# Ended (code 0) at Wed Aug 25 19:21:16 +08 2021, elapsed time 59 seconds

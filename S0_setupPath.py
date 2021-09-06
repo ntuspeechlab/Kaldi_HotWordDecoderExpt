@@ -32,7 +32,8 @@ def real_main(ipJsonFileName):
    log.info("{}".format("model="+config['model_name']))
 
 
-   exptDir=config['ExptInfo']['exptDir']
+   currentWD=config['ExptInfo']['currentWD']
+   exptDir=config['ExptInfo']['exptDir'].replace('$currentWD',currentWD)
    result = subprocess.run(["mkdir", exptDir], capture_output=True, text=True)
    log.info("{}".format("creating the experiment folder:"+exptDir))
 

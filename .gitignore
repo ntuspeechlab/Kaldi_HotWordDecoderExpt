@@ -1,0 +1,7 @@
+tmp/
+rebuild_hw/data/
+!rebuild_hw/data/readme.txt
+rebuild_hw/baseline/tdnnf
+rebuild_hw/tmp
+rebuild_hw/exp
+

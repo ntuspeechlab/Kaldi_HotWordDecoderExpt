@@ -1,9 +1,0 @@
-# ali-to-phones --write-lengths=true /home3/ztkyaw/w2021/deliverables/contrast-zin-dev/baseline/tdnnf-transfer-sp/decode_imda-part2_1629889191-hw_lmg/../final.mdl "ark:gunzip -c /home3/ztkyaw/w2021/deliverables/contrast-zin-dev/baseline/tdnnf-transfer-sp/decode_imda-part2_1629889191-hw_lmg/ali_tmp.2.gz|" ark,t:- | perl -ne '''chomp;s/^\S+\s*//;@a=split /\s;\s/, $_;$count{"begin ".$a[$0]."\n"}++;
-  if(@a>1){$count{"end ".$a[-1]."\n"}++;}for($i=0;$i<@a;$i++){$count{"all ".$a[$i]."\n"}++;}
-  END{for $k (sort keys %count){print "$count{$k} $k"}}''' | gzip -c > /home3/ztkyaw/w2021/deliverables/contrast-zin-dev/baseline/tdnnf-transfer-sp/decode_imda-part2_1629889191-hw_lmg/phone_stats.2.gz 
-# Invoked at Wed Aug 25 19:08:32 +08 2021 from node02
-#
-# Started at Wed Aug 25 19:09:30 SGT 2021 on node03
-ali-to-phones --write-lengths=true /home3/ztkyaw/w2021/deliverables/contrast-zin-dev/baseline/tdnnf-transfer-sp/decode_imda-part2_1629889191-hw_lmg/../final.mdl 'ark:gunzip -c /home3/ztkyaw/w2021/deliverables/contrast-zin-dev/baseline/tdnnf-transfer-sp/decode_imda-part2_1629889191-hw_lmg/ali_tmp.2.gz|' ark,t:- 
-LOG (ali-to-phones[5.5.888~1-d619]:main():ali-to-phones.cc:134) Done 125 utterances.
-# Ended (code 0) at Wed Aug 25 19:09:30 +08 2021, elapsed time 58 seconds

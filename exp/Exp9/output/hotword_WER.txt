@@ -1,0 +1,18 @@
+WER:./exp/Exp9/output/hotword
+Type:_HotONLY.txt
+%WER 33.74 [ 719 / 2131, 117 ins, 420 del, 182 sub ] [PARTIAL]
+%SER 48.00 [ 564 / 1175 ]
+Scored 1175 sentences, 1 not present in hyp.
+
+WER:./exp/Exp9/output/hotword
+Type:_HotAndWord.txt
+%WER 51.46 [ 4102 / 7972, 938 ins, 759 del, 2405 sub ] [PARTIAL]
+%SER 90.21 [ 1060 / 1175 ]
+Scored 1175 sentences, 1 not present in hyp.
+
+WER:./exp/Exp9/output/hotword
+Type:_WordONLY.txt
+%WER 39.86 [ 4386 / 11004, 513 ins, 834 del, 3039 sub ] [PARTIAL]
+%SER 90.98 [ 1069 / 1175 ]
+Scored 1175 sentences, 1 not present in hyp.
+

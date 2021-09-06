@@ -1,0 +1,18 @@
+WER:./exp/Exp9/output/master
+Type:_HotONLY.txt
+%WER 73.87 [ 1575 / 2132, 0 ins, 1530 del, 45 sub ]
+%SER 77.81 [ 915 / 1176 ]
+Scored 1176 sentences, 0 not present in hyp.
+
+WER:./exp/Exp9/output/master
+Type:_HotAndWord.txt
+%WER 58.45 [ 4665 / 7981, 1659 ins, 349 del, 2657 sub ]
+%SER 93.54 [ 1100 / 1176 ]
+Scored 1176 sentences, 0 not present in hyp.
+
+WER:./exp/Exp9/output/master
+Type:_WordONLY.txt
+%WER 51.07 [ 5625 / 11014, 399 ins, 1323 del, 3903 sub ]
+%SER 93.54 [ 1100 / 1176 ]
+Scored 1176 sentences, 0 not present in hyp.
+

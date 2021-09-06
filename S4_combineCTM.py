@@ -38,9 +38,10 @@ def real_main(ipJsonFileName):
    log.info("{}".format("combining the CTM of Master and Hotword decoder"))
 
    # parameters settings  extracted from json file
+   currentWD=config['ExptInfo']['currentWD']
    hotwordRawList = config['ExptInfo']['ipHotWordList']
 
-   exptDir=config['ExptInfo']['exptDir']
+   exptDir=config['ExptInfo']['exptDir'].replace('$currentWD',currentWD)
    outputDir=config['ExptInfo']['outputDir'].replace('$exptDir',exptDir)
    master_ctm     = config['CombineCTM']['master_ctm'].replace('$outputDir',outputDir)
    hotword_ctm    = config['CombineCTM']['hotword_ctm'].replace('$outputDir',outputDir)

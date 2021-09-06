@@ -1,4 +1,0 @@
-compute-wer --text --mode=present ark:/home3/ztkyaw/w2021/deliverables/contrast-zin-dev/baseline/tdnnf-transfer-sp/decode_imda-part2_1629889191-hw_lmg/scoring_kaldi/test_filt.txt ark,p:- 
-%WER 46.12 [ 3681 / 7981, 205 ins, 1738 del, 1738 sub ]
-%SER 87.67 [ 1031 / 1176 ]
-Scored 1176 sentences, 0 not present in hyp.

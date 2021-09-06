@@ -125,7 +125,8 @@ def real_main(ipJsonFileName):
    exptInfo=config['ExptInfo']['HWLG']
    log.info("{}".format("creating the experiment using:"+exptInfo))
 
-   exptDir=config['ExptInfo']['exptDir']
+   currentWD=config['ExptInfo']['currentWD']
+   exptDir=config['ExptInfo']['exptDir'].replace('$currentWD',currentWD)
    inputDir=config['ExptInfo']['inputDir'].replace('$exptDir',exptDir)
    outputDir=config['ExptInfo']['outputDir'].replace('$exptDir',exptDir)
    dataLGDir=config['ExptInfo']['dataLGDir'].replace('$exptDir',exptDir)

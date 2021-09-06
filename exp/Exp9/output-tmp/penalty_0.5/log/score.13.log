@@ -1,0 +1,5 @@
+# cat ./baseline/tdnnf-transfer-sp/decode_imda-part2_exp9-hw/scoring_kaldi/penalty_0.5/13.txt | compute-wer --text --mode=present ark:./baseline/tdnnf-transfer-sp/decode_imda-part2_exp9-hw/scoring_kaldi/test_filt.txt ark,p:- >& ./baseline/tdnnf-transfer-sp/decode_imda-part2_exp9-hw/wer_13_0.5 
+# Invoked at Mon Aug 30 19:05:27 SGT 2021 from node05
+#
+# Started at Mon Aug 30 19:05:34 SGT 2021 on node03
+# Ended (code 0) at Mon Aug 30 19:05:34 SGT 2021, elapsed time 7 seconds

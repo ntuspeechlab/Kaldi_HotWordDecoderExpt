@@ -1,0 +1,70 @@
+{
+  "model_name": "Trilingual_Sep2021_Hotword",
+  "mode": "create_hotwordDecoder",
+  "ExptInfo":{
+                "ipHotWordList":"./exp/hotwordRawList.txt",
+
+                "exptDir"   :"./exp/Exp9",
+                "inputDir"  :"$exptDir/input",
+                "outputDir" :"$exptDir/output",
+                "dataLGDir" :"$exptDir/dataLG",
+                "HWLG":"HWLG_fromMaster",
+                "str":"This is Expt to create hotword using json",
+                "__comment1": "The exptDir will be created,  with subFolders=",
+                "__comment1a":"inputDir,outputDir and dataLGDir will be created",
+                "__comment2":" For HWLG, we could choose also HWLGfromBPE (not yet,experimental)"
+             },
+
+  "MasterDecoder":{
+                    "masterDir":"./data/masterDecoder-yachao",
+                    "unigram_master":"$masterDir/unigram.count",
+                    "info": "This is the master decoder from June 2021"
+                  },   
+
+  "dataLGDir":{
+                "hwUnigram_txt" :"hwUnigram.txt",
+                "hwUnigram_arpa":"hwUnigram.arpa",
+                "hwUnigram_arpa_gz":"hwUnigram.arpa.gz",
+                "hwLex":"hwLex.txt"
+             },           
+
+
+  "CombineCTM":{
+                "master_ctm" :"$outputDir/master.ctm",
+                "hotword_ctm":"$outputDir/hotword.ctm",
+                "dual_ctm"   :"$outputDir/dual.ctm",  
+                "collar_rate":0.25
+                },
+
+  "WER_expts":{
+                "ins_penalty":"penalty_0.0,penalty_0.5,penalty_1.0",
+                "wt":"7,8,9,10,11,12,13,14,15,16,17"
+                },              
+     
+  "HWLG_fromMaster":{
+                  "select_SqrtUnigramCount":1,
+                  "useTopN_MasterWord":5000,
+                  "threshold_N_forCountHotWord":3000
+                 },
+     
+  "HWLG_fromBPE":{
+                "select_SqrtUnigramCount":1,
+                "useTopN_BPE":5000,
+                "threshold_N_forBPE":2000
+               },
+      
+   "TestDir":{
+              "dir"         :"./data/testData",
+              "test_ref_txt":"$testDir/test_ref.txt",  
+              "info"        : "This is the Directory where we store the test files and reference file for WER scoring"
+            },   
+ 
+  "KaldiDir":{
+                "KALDI_ROOT":"/local/tools/kaldi-2021",
+                "SRILM_ROOT":"/local/tools/kaldi-2021/tools/srilm/bin/i686-m64/",
+                "SCLITE_ROOT":"/local/tools/kaldi-2021/tools/sctk-20159b5/bin"
+             }
+} 
+
+
+

@@ -1,0 +1,18 @@
+WER:./exp/Exp9/output/dual
+Type:_HotONLY.txt
+%WER 32.27 [ 688 / 2132, 121 ins, 383 del, 184 sub ]
+%SER 46.43 [ 546 / 1176 ]
+Scored 1176 sentences, 0 not present in hyp.
+
+WER:./exp/Exp9/output/dual
+Type:_HotAndWord.txt
+%WER 37.01 [ 2954 / 7981, 744 ins, 499 del, 1711 sub ]
+%SER 79.00 [ 929 / 1176 ]
+Scored 1176 sentences, 0 not present in hyp.
+
+WER:./exp/Exp9/output/dual
+Type:_WordONLY.txt
+%WER 29.88 [ 3291 / 11014, 417 ins, 620 del, 2254 sub ]
+%SER 80.36 [ 945 / 1176 ]
+Scored 1176 sentences, 0 not present in hyp.
+

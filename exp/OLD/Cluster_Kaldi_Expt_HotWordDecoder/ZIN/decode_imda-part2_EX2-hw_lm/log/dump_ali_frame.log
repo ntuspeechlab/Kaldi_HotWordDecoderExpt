@@ -1,7 +1,0 @@
-# ali-to-phones --per-frame=true /home3/ztkyaw/w2021/deliverables/contrast-zin-dev/baseline/tdnnf-transfer-sp/decode_imda-part2_1629889191-hw_lmg/../final.mdl "ark:gunzip -c /home3/ztkyaw/w2021/deliverables/contrast-zin-dev/baseline/tdnnf-transfer-sp/decode_imda-part2_1629889191-hw_lmg/ali_tmp.*.gz|" "ark,t:|gzip -c >/home3/ztkyaw/w2021/deliverables/contrast-zin-dev/baseline/tdnnf-transfer-sp/decode_imda-part2_1629889191-hw_lmg/ali_frame_tmp.gz" 
-# Invoked at Wed Aug 25 19:10:29 +08 2021 from node02
-#
-# Started at Wed Aug 25 19:11:27 +08 2021 on node01
-ali-to-phones --per-frame=true /home3/ztkyaw/w2021/deliverables/contrast-zin-dev/baseline/tdnnf-transfer-sp/decode_imda-part2_1629889191-hw_lmg/../final.mdl 'ark:gunzip -c /home3/ztkyaw/w2021/deliverables/contrast-zin-dev/baseline/tdnnf-transfer-sp/decode_imda-part2_1629889191-hw_lmg/ali_tmp.*.gz|' 'ark,t:|gzip -c >/home3/ztkyaw/w2021/deliverables/contrast-zin-dev/baseline/tdnnf-transfer-sp/decode_imda-part2_1629889191-hw_lmg/ali_frame_tmp.gz' 
-LOG (ali-to-phones[5.5.888~1-d619]:main():ali-to-phones.cc:134) Done 1176 utterances.
-# Ended (code 0) at Wed Aug 25 19:11:27 +08 2021, elapsed time 58 seconds
